@@ -35,16 +35,15 @@
    <div class="app">
       <div class="navbar-wrapper">
          <div class="container-fluid">
-            <header
-               class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-               <div class="col-md-2 mb-2 mb-md-0">
+            <nav class="navbar h-100">
+               <div class="navbar-brand d-flex align-items-center gap-4">
+                  <div class="mobile-nav-toggler">
+                     <img src="../assets/images/hamburger.svg" alt="" class="w-auto h-auto">
+                  </div>
                   <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                     <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                     </svg>
+                     <img src="../assets/images/brand/logo.svg" alt="">
                   </a>
                </div>
-
                <ul class="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -52,9 +51,8 @@
                         My Post
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Post Job</a></li>
+                        <li><a class="dropdown-item" href="#">My Jobs</a></li>
                      </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -63,9 +61,8 @@
                         My Work
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Find Jobs</a></li>
+                        <li><a class="dropdown-item" href="#">Finished Jobs</a></li>
                      </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -74,9 +71,8 @@
                         Deposit
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Deposit</a></li>
+                        <li><a class="dropdown-item" href="#">Withdraw</a></li>
                      </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -85,9 +81,8 @@
                         Setting
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">My Support</a></li>
                      </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -96,100 +91,183 @@
                         Refer & Earn
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#"> Refer & Earn</a></li>
+                        <li><a class="dropdown-item" href="#">Frelancer</a></li>
                      </ul>
                   </li>
                </ul>
+               <div class="navbar-action d-flex gap-3 justify-content-end">
+                  <div class="dropdown text-end profile-icon">
+                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                     </a>
+                     <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Hello Mannan</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                     </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">Post Job</button>
+               </div>
 
-               <div class="col-md-3 text-end">
-                  <div class="navbar-action d-flex gap-3 justify-content-end">
-                     <div class="dropdown text-end profile-icon">
-                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                           <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
-                              class="rounded-circle">
-                        </a>
-                        <ul class="dropdown-menu text-small">
-                           <li><a class="dropdown-item" href="#">New project...</a></li>
-                           <li><a class="dropdown-item" href="#">Settings</a></li>
-                           <li><a class="dropdown-item" href="#">Profile</a></li>
-                           <li>
-                              <hr class="dropdown-divider">
-                           </li>
-                           <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                     </div>
-                     <button type="button" class="btn btn-primary btn-sm">Post Job</button>
+            </nav>
+            <div class="short-menu">
+               <div class="feature-menu">
+                  <!-- <svg width="540" height="43" viewBox="0 0 853 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0_4668_42891)">
+                  <path
+                     d="M0 0.648438L12.8803 33.358C13.9343 36.027 16.2331 38.3827 19.4219 40.0617C22.6108 41.7407 26.5125 42.6497 30.5252 42.6484H822.463C826.473 42.6478 830.372 41.738 833.559 40.0591C836.745 38.3802 839.042 36.0256 840.095 33.358L853 0.648438H0Z"
+                     fill="white" />
+               </g>
+               <path d="M0.693359 0.648438L852.33 0.648498" stroke="#E5E5E5" stroke-linecap="square" />
+               <defs>
+                  <clipPath id="clip0_4668_42891">
+                     <rect width="853" height="42" fill="white" transform="translate(0 0.648438)" />
+                  </clipPath>
+               </defs>
+            </svg> -->
+                  <div class="feature-menu-content">
+                     <a href="assign-parcel.html" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/pending_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Pending : 0</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/approve_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Earned : 0</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/deposit_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Deposit : 0</h6>
+                        </div>
+                     </a>
                   </div>
                </div>
-            </header>
+            </div>
          </div>
+      </div>
+      <div class="mobile-menu">
+         <div class="menu-backdrop"></div>
+         <nav class="mobile-menu-nav">
+            <div class="mobile-brand d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
+               </div>
+               <div class="close-btn ">
+                  <img src="../assets/images/close.png" alt="">
+               </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-outer">
+
+
+            </div>
+         </nav>
       </div>
       <div class="main-wrapper">
          <div class="container-fluid">
-            <div class="find-task">
-               <!-- <div class="ad-wrapper mt-3">
-                  <img src="../assets/images/banner.webp" alt="" class="w-100 h-auto">
-               </div> -->
-               <div class="filter-area d-flex justify-content-between align-items-center mt-4">
-                  <h5>Total Orders</h5>
-                  <form action="">
-                     <div class="filter d-flex gap-3">
-                        <div class="search-field">
-                           <div class="form-group position-relative">
-                              <input type="search" class="form-control" placeholder="Search by title" required>
-                              <img src="../assets/images/master_icon/search_box_icon.svg" alt=""
-                                 class="search_icon w-auto h-auto">
+            <div class="dashboard">
+               <div class="ad-wrapper">
+                  <img src="../assets/images/bannar.jpg" alt="" class="w-100 h-auto">
+               </div>
+               <div class="find-task">
+                  <div class="filter-area d-flex justify-content-between align-items-center mt-4">
+                     <h5>Total Orders</h5>
+                     <form action="">
+                        <div class="filter d-flex gap-3">
+                           <div class="search-field">
+                              <div class="form-group position-relative">
+                                 <input type="search" class="form-control" placeholder="Search by title" required>
+                                 <img src="../assets/images/master_icon/search_box_icon.svg" alt=""
+                                    class="search_icon w-auto h-auto">
+                              </div>
+                           </div>
+                           <div class="select-field d-flex gap-3">
+                              <div class="form-group position-relative">
+                                 <select class="custom-select2 form-control">
+                                    <option selected>Select value</option>
+                                    <option value="1">Value 1</option>
+                                    <option value="2">Value 2</option>
+                                    <option value="3">Value 3</option>
+                                 </select>
+                              </div>
+                              <div class="form-group position-relative">
+                                 <select class="choices-select form-control">
+                                    <option selected>Select value</option>
+                                    <option value="1">Value 1</option>
+                                    <option value="2">Value 2</option>
+                                    <option value="3">Value 3</option>
+                                 </select>
+                              </div>
                            </div>
                         </div>
-                        <div class="select-field d-flex gap-3">
-                           <div class="form-group position-relative">
-                              <select class="custom-select2 form-control">
-                                 <option selected>Select value</option>
-                                 <option value="1">Value 1</option>
-                                 <option value="2">Value 2</option>
-                                 <option value="3">Value 3</option>
-                              </select>
-                           </div>
-                           <div class="form-group position-relative">
-                              <select class="choices-select form-control">
-                                 <option selected>Select value</option>
-                                 <option value="1">Value 1</option>
-                                 <option value="2">Value 2</option>
-                                 <option value="3">Value 3</option>
-                              </select>
-                           </div>
+                     </form>
+                  </div>
+                  <div class="all-task mt-3">
+                     <div class="card">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th class="zone">Zone </th>
+                                    <th class="title">Title</th>
+                                    <th class="payment">Payment </th>
+                                    <th class="done">Done</th>
+                                    <th class="time">Time</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
+                                    <td class="title">The quick
+                                       brown fox jumps over lazy dogs daily </td>
+                                    <td class="payment">200 </td>
+                                    <td class="done"><span>50000</span> /
+                                       <span>50000</span>
+                                    </td>
+                                    <td class="time">Time</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
+                                    <td class="title">The quick
+                                       brown fox jumps over lazy dogs daily </td>
+                                    <td class="payment">200 </td>
+                                    <td class="done"><span>50000</span> /
+                                       <span>50000</span>
+                                    </td>
+                                    <td class="time">Time</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
+                                    <td class="title">The quick
+                                       brown fox jumps over lazy dogs daily </td>
+                                    <td class="payment">200 </td>
+                                    <td class="done"><span>50000</span> /
+                                       <span>50000</span>
+                                    </td>
+                                    <td class="time">Time</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
+                                    <td class="title">The quick
+                                       brown fox jumps over lazy dogs daily </td>
+                                    <td class="payment">200 </td>
+                                    <td class="done"><span>50000</span> /
+                                       <span>50000</span>
+                                    </td>
+                                    <td class="time">Time</td>
+                                 </tr>
+
+                              </tbody>
+                           </table>
                         </div>
                      </div>
-                  </form>
-               </div>
-               <div class="all-task mt-3">
-                  <div class="table-responsive">
-                     <table class="table">
-                        <thead>
-                           <tr>
-                              <th class="zone">Zone </th>
-                              <th class="title">Title</th>
-                              <th class="payment">Payment </th>
-                              <th class="done">Done</th>
-                              <th class="time">Time</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td class="zone">ID </td>
-                              <td class="title">The quick
-                                 brown fox jumps over lazy dogs daily </td>
-                              <td class="payment">200 </td>
-                              <td class="done"><span>50000</span> /
-                                 <span>50000</span>
-                              </td>
-                              <td class="time">Time</td>
-                           </tr>
-                        </tbody>
-                     </table>
                   </div>
                </div>
 

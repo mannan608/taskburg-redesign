@@ -5,12 +5,11 @@
   }
 
   .short-menu {
-    width: 100%;
+    width: calc(100% - 40px);
   }
 }
 
 @media only screen and (max-width: 991px) {
-
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
@@ -97,17 +96,26 @@
   .navbar-nav .nav-item .nav-link {
     align-items: start;
   }
+  .menu-outer .dropdown-menu.show {
+    position: unset !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    border: 1px solid transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .menu-outer .dropdown-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 710px) {
-
   .find-task .all-task {
     .title {
       width: 200px;
     }
   }
 }
-
 
 @media only screen and (max-width: 680px) {
   .filter-area {
@@ -168,7 +176,6 @@
 
   .short-menu {
     width: calc(100% - 32px);
-
   }
 
   .feature-menu-content {

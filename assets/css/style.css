@@ -121,12 +121,12 @@ body {
 .short-menu {
   width: 1280px;
   position: fixed;
-  top: 88px;
+  top: 89px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background: var(--bs-primary-100);
+  /* background: var(--bs-primary-100); */
 
 }
 
@@ -167,4 +167,27 @@ body {
 
 .all-task .card {
   padding: 14px;
+}
+
+.mobile-logo {
+  display: none !important;
+}
+
+.ad-wrapper.mobile {
+  display: none;
+}
+
+.action-menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-action .badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
 }

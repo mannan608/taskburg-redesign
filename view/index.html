@@ -34,14 +34,17 @@
 <body>
    <div class="app">
       <div class="navbar-wrapper">
-         <div class="container-fluid">
+         <div class="container-fluid h-100">
             <nav class="navbar h-100">
-               <div class="navbar-brand d-flex align-items-center gap-4">
+               <div class="navbar-brand d-flex align-items-center gap-3">
                   <div class="mobile-nav-toggler">
                      <img src="../assets/images/hamburger.svg" alt="" class="w-auto h-auto">
                   </div>
-                  <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                  <a href="/" class="d-inline-flex link-body-emphasis desktop-logo">
                      <img src="../assets/images/brand/logo.svg" alt="">
+                  </a>
+                  <a href="/" class="d-inline-flex link-body-emphasis mobile-logo">
+                     <img src="../assets/images/brand/icon.jpg" alt="">
                   </a>
                </div>
                <ul class="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -97,6 +100,10 @@
                   </li>
                </ul>
                <div class="navbar-action d-flex gap-3 justify-content-end">
+                  <a href="notification.html" class="notification-icon action-menu position-relative">
+                     <img src="../assets/images/notification_24.svg" alt="" class="w-auto h-auto">
+                     <span class="badge text-bg-danger">4</span>
+                  </a>
                   <div class="dropdown text-end profile-icon">
                      <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -113,38 +120,36 @@
             </nav>
             <div class="short-menu">
                <div class="feature-menu">
-                  <!-- <svg width="540" height="43" viewBox="0 0 853 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <g clip-path="url(#clip0_4668_42891)">
-                  <path
-                     d="M0 0.648438L12.8803 33.358C13.9343 36.027 16.2331 38.3827 19.4219 40.0617C22.6108 41.7407 26.5125 42.6497 30.5252 42.6484H822.463C826.473 42.6478 830.372 41.738 833.559 40.0591C836.745 38.3802 839.042 36.0256 840.095 33.358L853 0.648438H0Z"
-                     fill="white" />
-               </g>
-               <path d="M0.693359 0.648438L852.33 0.648498" stroke="#E5E5E5" stroke-linecap="square" />
-               <defs>
-                  <clipPath id="clip0_4668_42891">
-                     <rect width="853" height="42" fill="white" transform="translate(0 0.648438)" />
-                  </clipPath>
-               </defs>
-            </svg> -->
+                  <svg width="540" height="42" viewBox="0 0 540 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="mask0_3_7" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="540"
+                        height="42">
+                        <path d="M540 0H0V42H540V0Z" fill="white" />
+                     </mask>
+                     <g mask="url(#mask0_3_7)">
+                        <path
+                           d="M0 0L8.154 32.7096C8.82124 35.3785 10.2765 37.7342 12.2952 39.4132C14.314 41.0922 16.784 42.0012 19.3243 42H520.668C523.207 41.9994 525.675 41.0895 527.693 39.4107C529.71 37.7318 531.164 35.3771 531.83 32.7096L540 0H0Z"
+                           fill="white" />
+                     </g>
+                  </svg>
                   <div class="feature-menu-content">
                      <a href="assign-parcel.html" class="font-12">
                         <div class="card-item  d-flex align-items-center gap-1">
                            <img src="../assets/images/pending_bal.svg" alt="" class="w-auto h-auto">
-                           <h6 class="font-12">Pending : 0</h6>
+                           <h6 class="font-12">Pending : 20000</h6>
                         </div>
                      </a>
                      |
                      <a href="#" class="font-12">
                         <div class="card-item  d-flex align-items-center gap-1">
                            <img src="../assets/images/approve_bal.svg" alt="" class="w-auto h-auto">
-                           <h6 class="font-12">Earned : 0</h6>
+                           <h6 class="font-12">Earned : 20000</h6>
                         </div>
                      </a>
                      |
                      <a href="#" class="font-12">
                         <div class="card-item  d-flex align-items-center gap-1">
                            <img src="../assets/images/deposit_bal.svg" alt="" class="w-auto h-auto">
-                           <h6 class="font-12">Deposit : 0</h6>
+                           <h6 class="font-12">Deposit : 20000</h6>
                         </div>
                      </a>
                   </div>
@@ -173,12 +178,15 @@
       <div class="main-wrapper">
          <div class="container-fluid">
             <div class="dashboard">
-               <div class="ad-wrapper">
+               <div class="ad-wrapper desktop">
+                  <img src="../assets/images/bannar.jpg" alt="" class="w-100 h-auto">
+               </div>
+               <div class="ad-wrapper mobile">
                   <img src="../assets/images/bannar.jpg" alt="" class="w-100 h-auto">
                </div>
                <div class="find-task">
                   <div class="filter-area d-flex justify-content-between align-items-center mt-4">
-                     <h5>Total Orders</h5>
+                     <h5>Total Jobs (500)</h5>
                      <form action="">
                         <div class="filter d-flex gap-3">
                            <div class="search-field">
@@ -223,6 +231,16 @@
                                  </tr>
                               </thead>
                               <tbody>
+                                 <tr>
+                                    <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
+                                    <td class="title">The quick
+                                       brown fox jumps over lazy dogs daily </td>
+                                    <td class="payment">200 </td>
+                                    <td class="done"><span>50000</span> /
+                                       <span>50000</span>
+                                    </td>
+                                    <td class="time">Time</td>
+                                 </tr>
                                  <tr>
                                     <td class="zone"><i class="fa-solid fa-earth-americas"></i> </td>
                                     <td class="title">The quick

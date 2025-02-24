@@ -10,9 +10,16 @@
 }
 
 @media only screen and (max-width: 991px) {
+
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
+  }
+
+  .navbar-wrapper {
+    .navbar-nav {
+      gap: 14px;
+    }
   }
 }
 
@@ -96,6 +103,7 @@
   .navbar-nav .nav-item .nav-link {
     align-items: start;
   }
+
   .menu-outer .dropdown-menu.show {
     position: unset !important;
     transform: translate3d(0px, 0px, 0px) !important;
@@ -103,9 +111,20 @@
     box-shadow: none;
     padding: 0;
   }
+
   .menu-outer .dropdown-item {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .menu-outer .dropdown-toggle::after {
+    display: block;
+  }
+
+  .menu-outer .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -170,16 +189,42 @@
     }
   }
 
-  .feature-menu {
+  /* .feature-menu {
     width: 100%;
-  }
+  } */
 
   .short-menu {
-    width: calc(100% - 32px);
+    width: calc(100% - 40px);
   }
 
   .feature-menu-content {
     padding: 0 14px;
+  }
+
+  .navbar-wrapper {
+    height: 74px;
+  }
+
+  .short-menu {
+    top: 75px;
+  }
+
+  .dashboard {
+    padding-top: 130px;
+  }
+
+  .find-task .filter-area {
+    margin-top: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .feature-menu {
+    width: 100%;
+
+    svg {
+      width: 100% !important;
+    }
   }
 }
 
@@ -198,11 +243,28 @@
   .app {
     background: var(--bs-white);
   }
+
+  .short-menu {
+    background: var(--bs-white);
+  }
+
+  .navbar-wrapper {
+    box-shadow: none;
+    border-bottom: 1px solid var(--bs-neutral-300);
+  }
+
+  .feature-menu-content {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .container-fluid {
     padding: 0 16px;
+  }
+
+  .short-menu {
+    width: calc(100% - 32px);
   }
 
   .select-field .form-group {
@@ -258,6 +320,28 @@
 
   .table-responsive .table tbody tr td {
     word-break: break-all;
+  }
+
+  .mobile-logo {
+    display: block !important;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .desktop-logo {
+    display: none !important;
+  }
+
+  .ad-wrapper.desktop {
+    display: none;
+  }
+
+  .ad-wrapper.mobile {
+    display: block;
+    height: 94px;
   }
 }
 

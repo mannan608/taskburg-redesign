@@ -8,7 +8,6 @@ const tooltipList = [...tooltipTriggerList].map(
 (function ($) {
   "use strict";
 
-
   // Sticky Navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -23,7 +22,7 @@ const tooltipList = [...tooltipTriggerList].map(
     // Menu Toggle Btn for mobile-nav-toggler
     $(".mobile-nav-toggler").on("click", function () {
       // Get the nav-menu content and append it to menu-outer
-      var navMenuContent = $(".navbar-nav").html();
+      var navMenuContent = $(".mobile-nav").html();
       $(".mobile-menu .mobile-menu-nav .menu-outer")
         .empty()
         .append(navMenuContent);

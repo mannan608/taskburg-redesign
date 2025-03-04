@@ -10,6 +10,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
@@ -29,7 +30,7 @@
     gap: 14px;
   }
 
-  .find-task .all-task {
+  .table-responsive {
     .title {
       width: 230px;
     }
@@ -83,9 +84,11 @@
     gap: 12px;
     flex-direction: column;
   }
+
   .mobile-menu .logo {
     width: 120px;
   }
+
   .mobile-menu .mobile-menu-nav .divider {
     border-bottom: 1px solid var(--bs-neutral-300);
     padding: 6px 0;
@@ -105,31 +108,33 @@
     align-items: start;
   }
 
-  .menu-outer .dropdown-menu.show {
+  /* .menu-outer .dropdown-menu.show {
     position: unset !important;
     transform: translate3d(0px, 0px, 0px) !important;
     border: 1px solid transparent;
     box-shadow: none;
     padding: 0;
-  }
+  } */
 
   .menu-outer .dropdown-item {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .menu-outer .dropdown-toggle::after {
+  /* .menu-outer .dropdown-toggle::after {
     display: block;
-  }
+  } */
 
   .menu-outer .nav-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .menu-outer .mobile-nav {
     display: block;
   }
+
   .menu-outer {
     li {
       a {
@@ -141,10 +146,42 @@
       }
     }
   }
+
+
+  .footer-bottom {
+    .row {
+      flex-direction: column;
+      gap: 34px;
+      text-align: center;
+    }
+
+    .social-icon {
+      justify-content: center !important;
+    }
+
+  }
+
+  .footerContainer .social-media,
+  .footerContainer .company {
+    padding-left: 0px;
+  }
+
+  .job-submiting {
+    flex-direction: column-reverse;
+  }
+
+  .job-submiting .job-description {
+    width: 100%;
+  }
+
+  .job-submiting .job-summary {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 710px) {
-  .find-task .all-task {
+  .table-responsive {
     .title {
       width: 200px;
     }
@@ -174,7 +211,7 @@
     font-size: 14px !important;
   }
 
-  .find-task .all-task {
+  .table-responsive {
     .zone {
       width: 60px;
     }
@@ -231,6 +268,14 @@
   .find-task .filter-area {
     margin-top: 32px !important;
   }
+
+  .font-18 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -244,7 +289,7 @@
 }
 
 @media only screen and (max-width: 540px) {
-  .find-task .all-task {
+  .table-responsive {
     .title {
       width: 174px;
     }
@@ -270,6 +315,20 @@
 
   .feature-menu-content {
     padding: 0;
+  }
+
+  .job-summary {
+    ul {
+      gap: 10px !important;
+
+      li {
+        padding-bottom: 10px !important;
+      }
+    }
+  }
+
+  .backBtn {
+    margin-top: -6px;
   }
 }
 
@@ -298,7 +357,7 @@
     line-height: 20px;
   }
 
-  .find-task .all-task {
+  .table-responsive {
     text-align: center;
 
     .zone {
@@ -346,6 +405,11 @@
     }
   }
 
+  .table-responsive .table tbody a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   /* .desktop-logo {
     display: none !important;
   } */
@@ -358,34 +422,46 @@
     display: block;
     height: 94px;
   }
+
   .navbar-wrapper .btn-sm {
     height: 34px;
     font-size: 0.75rem !important;
     padding: 0 0.6rem !important;
     margin-left: 4px;
   }
+
   .navbar-wrapper .profile-icon {
     img {
       width: 36px !important;
       height: 36px !important;
     }
   }
+
   .desktop-logo {
     width: 120px;
   }
+
   .navbar-action {
     gap: 8px !important;
   }
+
+  h6 {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
 }
+
 @media only screen and (max-width: 393px) {
   .desktop-logo {
     width: 115px;
   }
 }
+
 @media only screen and (max-width: 393px) {
   .desktop-logo {
     width: 110px;
   }
+
   .feature-menu-content {
     .card-item {
       img {

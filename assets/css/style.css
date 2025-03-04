@@ -51,7 +51,7 @@ body {
   height: 120px;
 }
 
-.find-task .all-task {
+.table-responsive {
   .zone {
     width: 80px;
   }
@@ -70,6 +70,18 @@ body {
 
   .time {
     width: 100px;
+  }
+
+  .progress {
+    width: 100px;
+  }
+
+  .rated {
+    width: 100px;
+  }
+
+  .status {
+    width: 80px;
   }
 }
 
@@ -108,13 +120,19 @@ body {
   }
 }
 
-/* .navbar-nav .dropdown-menu {
-  display: none;
+
+/* 
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  position: absolute !important;
+  margin-top: 0 !important;
 } */
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
 
 .navbar-nav .nav-item:hover .dropdown-menu {
   display: block;
-  position: absolute;
   margin-top: 0 !important;
 }
 
@@ -193,4 +211,110 @@ body {
 
 .mobile-nav {
   display: none;
+}
+
+.footerContainer {
+  background: var(--bs-neutral-900);
+  padding: 50px 0 30px 0;
+  margin-top: 160px;
+}
+
+.footer-top {
+  border-bottom: 1px solid #CBD5E1;
+}
+
+.social-icon i {
+  font-size: 32px;
+}
+
+.footer-bottom .link a {
+  color: var(--bs-white);
+  font-size: 16px;
+}
+
+.footer-top .sort-summary .summary {
+  border-left: 1px solid #CBD5E1;
+  padding-left: 24px;
+}
+
+.footer-menu {
+  display: none;
+}
+
+.footerContainer .social-media,
+.footerContainer .company {
+  padding-left: 48px;
+}
+
+.table-responsive .table tbody a {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+
+.main-wrapper {
+  min-height: calc(100vh - 452px);
+}
+
+
+.job-submiting .job-description {
+  width: calc(100% - 355px);
+  height: fit-content;
+
+  ul {
+    li {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      p {
+        width: calc(100% - 18px);
+      }
+    }
+
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bs-danger-500);
+    }
+  }
+}
+
+.job-submiting .job-summary {
+  width: 330px;
+  padding-top: 30px;
+}
+
+.job-summary {
+  .cardRow {
+    .fa-earth-americas {
+      margin-top: 2px;
+    }
+  }
+}
+
+.taskburg-ans .card {
+  background: var(--bs-primary-500);
+  color: var(--bs-white);
+}
+
+.attach-file.dragDrop-area {
+  width: 140px;
+  height: 36px;
+  border: 2px solid var(--bs-primary-300);
+  border-radius: 4px;
+  background: var(--bs-white);
+}
+
+.marquee-message {
+  width: 100%;
+  padding: 10px;
+  background: var(--bs-primary-500);
+  border-radius: 4px;
+  color: var(--bs-white);
 }

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Master admin panel</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <link rel="icon" href="assets/images/brand/favicon.ico">
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+   <!-- end bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="../assets/css/master.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+   <div class="app">
+      <div class="navbar-wrapper">
+         <div class="container-fluid h-100">
+            <nav class="navbar h-100">
+               <div class="navbar-brand d-flex align-items-center gap-2">
+                  <div class="mobile-nav-toggler">
+                     <img src="../assets/images/hamburger.svg" alt="" class="w-auto h-auto">
+                  </div>
+                  <a href="/" class="d-inline-flex link-body-emphasis desktop-logo">
+                     <img src="../assets/images/brand/logo.svg" alt="">
+                  </a>
+
+               </div>
+               <ul class="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Post
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Post Job</a></li>
+                        <li><a class="dropdown-item" href="#">My Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Work
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Find Jobs</a></li>
+                        <li><a class="dropdown-item" href="#">Finished Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Deposit
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Deposit</a></li>
+                        <li><a class="dropdown-item" href="#">Withdraw</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Setting
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">My Support</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Refer & Earn
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Refer & Earn</a></li>
+                        <li><a class="dropdown-item" href="#">Frelancer</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="mobile-nav">
+                  <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find
+                        Jobs</a></li>
+                  <li> <a href="#"><i class="fa-brands fa-creative-commons-nd"></i> Post
+                        Job</a></li>
+                  <li><a href="#"><i class="fa-solid fa-list-check"></i> My Jobs</a></li>
+                  <li><a href="#"><i class="fa-regular fa-square-check"></i> Finished
+                        Jobs</a></li>
+                  <li><a href="#"><i class="fa-solid fa-building-columns"></i> Deposit</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-dollar-sign"></i> Withdraw</a></li>
+                  <li><a href="#"><i class="fa-solid fa-share-nodes"></i> Refer &amp; Earn</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-phone"></i> Support</a></li>
+                  <li><a href="#"><i class="fa-regular fa-user"></i> Freelancer</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-gear"></i></i>
+                        Setting</a></li>
+
+               </ul>
+               <div class="navbar-action d-flex gap-3 justify-content-end">
+                  <a href="notification.html" class="notification-icon action-menu position-relative">
+                     <img src="../assets/images/notification_24.svg" alt="" class="w-auto h-auto">
+                     <span class="badge text-bg-danger">4</span>
+                  </a>
+                  <div class="dropdown text-end profile-icon">
+                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                     </a>
+                     <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Hello Mannan</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                     </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">Post Job</button>
+               </div>
+
+            </nav>
+            <div class="short-menu">
+               <div class="feature-menu">
+                  <svg width="540" height="42" viewBox="0 0 540 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="mask0_3_7" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="540"
+                        height="42">
+                        <path d="M540 0H0V42H540V0Z" fill="white" />
+                     </mask>
+                     <g mask="url(#mask0_3_7)">
+                        <path
+                           d="M0 0L8.154 32.7096C8.82124 35.3785 10.2765 37.7342 12.2952 39.4132C14.314 41.0922 16.784 42.0012 19.3243 42H520.668C523.207 41.9994 525.675 41.0895 527.693 39.4107C529.71 37.7318 531.164 35.3771 531.83 32.7096L540 0H0Z"
+                           fill="white" />
+                     </g>
+                  </svg>
+                  <div class="feature-menu-content">
+                     <a href="assign-parcel.html" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/pending_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Pending : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/approve_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Earned : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/deposit_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Deposit : 20000</h6>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mobile-menu">
+         <div class="menu-backdrop"></div>
+         <nav class="mobile-menu-nav">
+            <div class="mobile-brand d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
+               </div>
+               <div class="close-btn ">
+                  <img src="../assets/images/close.png" alt="">
+               </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-outer">
+
+
+            </div>
+         </nav>
+      </div>
+      <div class="main-wrapper">
+         <div class="container-fluid">
+            <div class="dashboard">
+               <div class="jobs-details">
+                  <div class="title mb-3">
+                     <a href="#" class="font-18 fw-600 d-flex align-items-center gap-1 backBtn"><img
+                           src="../assets/images/back_icon.svg" alt="" class="w-auto h-auto">
+                        Back</a>
+                  </div>
+                  <!-- job title -->
+                  <div class="card p-3 ">
+                     <div class="d-flex gap-3 justify-content-between">
+                        <div class="job-title d-flex  gap-1 flex-column">
+                           <h5 class="fw-600">The quick
+                              brown fox jumps over lazy dogs daily</h5>
+                           <p><i class="fa-solid fa-earth-americas me-1"></i>
+                              International World Wide</p>
+                        </div>
+                        <h4>$200</h4>
+                     </div>
+                     <div class="job-action mt-4 d-flex gap-3">
+                        <button class="btn btn-danger btn-x-sm" data-bs-toggle="modal"
+                           data-bs-target="#reportJobModal">Report Job</button>
+                        <button class="btn btn-primary btn-x-sm" data-bs-toggle="modal"
+                           data-bs-target="#hideJobModal">Hide Job</button>
+                     </div>
+                  </div>
+
+                  <!-- job description -->
+                  <div class="job-submiting  mt-4 d-flex gap-4">
+                     <div class="job-description">
+                        <div class="job-gideline">
+                           <h5 class="fw-600 mb-2">What is expected from workers?</h5>
+                           <div class="card p-3">
+                              <h6>💥আগে পড়ুন তারপর কাজ করুন💥</h6>
+                              <div class="step mt-2">
+                                 <h6><span class="fw-600">Step 1 : </span> YouTube এ সার্চ করে
+                                    ডুকতে হবে💥 video tag { যেকনো একটি }</h6>
+                                 <ul class="mt-2">
+                                    <li>
+                                       <p>how to create melbet account</p>
+                                    </li>
+                                    <li>
+                                       <p>open melbet</p>
+                                    </li>
+                                    <li>
+                                       <p>melbet app (ভিডিও দেখতে হবে)</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="step mt-2">
+                                 <h6><span class="fw-600">Step 2 : </span> YouTube এ সার্চ করে
+                                    ডুকতে হবে💥 video tag { যেকনো একটি }</h6>
+                                 <ul class="mt-2">
+                                    <li>
+                                       <p>how to create melbet account</p>
+                                    </li>
+                                    <li>
+                                       <p>open melbet</p>
+                                    </li>
+                                    <li>
+                                       <p>melbet app (ভিডিও দেখতে হবে)</p>
+                                    </li>
+                                 </ul>
+                              </div>
+
+                              <div class="example-Screenshot mt-4">
+                                 <h6>Example Screenshot</h6>
+                                 <div class="images d-flex gap-3 mt-2 flex-wrap">
+                                    <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
+                                    <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
+                                    <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="job-gideline mt-3">
+                           <h5 class="fw-600 mb-2">Submit your proofs below</h5>
+
+                           <div class="taskburg-ans">
+                              <form action="" class="needs-validation" novalidate="">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="card p-3">
+                                          <div class="form-group position-relative mb-1">
+                                             <label for="" class="form-label">Enter gcode answer</label>
+                                             <input type="text" class="form-control" placeholder="Enter gcode ans"
+                                                required>
+                                             <div class="invalid-feedback">
+                                                Please provide your right gcode answer.
+                                             </div>
+                                          </div>
+                                          <div class="note">
+                                             <p class="text-white"><span class="fw-600">Note:</span> Follow the
+                                                hint and submit the Gcode <i
+                                                   class="fa-solid fa-hand-point-right me-1 ms-1"></i>
+                                                Hint: 7067129</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="Screenshot-upload mt-3">
+                                          <div class="form-group position-relative">
+                                             <label for="" class="form-label">1. ভিডিও শুরু হওয়ার আগের একটা স্ক্রিনশট
+                                                দিন {
+                                                টাইম সহ
+                                                }</label>
+                                             <div
+                                                class="uploadedContainer position-relative d-flex gap-3 align-items-center">
+                                                <div class="dragDrop-area attach-file"><input type="file"
+                                                      name="attachment" class="form-control fileInput" id="files"><label
+                                                      class="uploaded-label w-100 h-100 font-14 fw-500  d-flex gap-1 align-items-center justify-content-center"
+                                                      for="files"><img src="../assets/images/upload_file_20.svg" alt=""
+                                                         class="w-auto h-auto">
+                                                      <p class="font-14 fw-500 text-primary">Choose file</p>
+                                                   </label></div>
+                                                <p>No file selected</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="Screenshot-upload mt-3">
+                                          <div class="form-group position-relative">
+                                             <label for="" class="form-label">2. ভিডিও শুরু হওয়ার আগের একটা স্ক্রিনশট
+                                                দিন {
+                                                টাইম সহ
+                                                }</label>
+                                             <div
+                                                class="uploadedContainer position-relative d-flex gap-3 align-items-center">
+                                                <div class="dragDrop-area attach-file"><input type="file"
+                                                      name="attachment" class="form-control fileInput" id="files"><label
+                                                      class="uploaded-label w-100 h-100 font-14 fw-500  d-flex gap-1 align-items-center justify-content-center"
+                                                      for="files"><img src="../assets/images/upload_file_20.svg" alt=""
+                                                         class="w-auto h-auto">
+                                                      <p class="font-14 fw-500 text-primary">Choose file</p>
+                                                   </label></div>
+                                                <p>No file selected</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="form-action d-flex justify-content-between mt-5">
+                                          <button class="btn btn-danger btn-sm">Cancel</button>
+                                          <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+
+                                       </div>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="job-summary">
+                        <div class="card p-3">
+                           <ul class="d-flex flex-column gap-3 ">
+                              <li class="border-bottom pb-3">
+                                 <p><i class="fa-solid fa-briefcase me-1"></i> Job ID</p>
+                                 <h6 class="mt-1 ps-3">2wjsKJS1NS1SDS</h6>
+                              </li>
+                              <li class="border-bottom pb-3">
+                                 <p><i class="fa-solid fa-square-check me-1"></i> Job Done</p>
+                                 <h6 class="mt-1  ps-3">40/240</h6>
+                              </li>
+                              <li class="border-bottom pb-3">
+                                 <p><i class="fa-solid fa-user me-1"></i> Employer</p>
+                                 <h6 class="mt-1 ps-3 d-flex align-items-center gap-3 cursor-pointer">Kawser080 <i
+                                       class="fa-regular fa-copy"></i></h6>
+                              </li>
+                              <li class="border-bottom pb-3">
+                                 <p><i class="fa-solid fa-clock me-1"></i>Job Duration</p>
+                                 <h6 class="mt-1 ps-3">5 Days </h6>
+                              </li>
+                              <li class="border-bottom pb-3">
+                                 <p><i class="fa-solid fa-layer-group me-1"></i> Category</p>
+                                 <h6 class="mt-1 ps-3">Youtube > Watch video (1-5 min) </h6>
+                              </li>
+                              <li>
+                                 <h6><i class="fa-solid fa-earth-americas me-1"></i> Excluded countries</h6>
+                                 <p class="ps-4">No country</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footerContainer">
+         <div class="container-fluid">
+            <footer>
+               <div class="footer-bottom mt-4">
+                  <div class="row">
+                     <div class="col">
+                        <a href="#" class="footer-brand p-3">
+                           <img src="../assets/images/brand/footer_logo.svg" alt="" class="w-auto h-auto">
+                        </a>
+                        <p class="text-white mt-2 text-center">Taskburg is a small workplace that gradually turns into a
+                           big
+                           success.</p>
+                     </div>
+                     <div class="col company">
+                        <h5 class="fw-600 text-white">Company</h5>
+                        <ul class="d-flex flex-column link gap-1 mt-3">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="col social-media">
+                        <h5 class="fw-600 text-white">Follow us </h5>
+                        <ul class="d-flex gap-3 social-icon mt-3">
+                           <li><a href="#" class="text-white "><i class="fa-brands fa-square-instagram"></i></a>
+                           </li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <p class="font-14 fw-500 mt-5 text-center text-white">© 2024 - 2025 Taskburg. All rights reserved</p>
+            </footer>
+         </div>
+      </div>
+
+      <!-- job details modal -->
+      <div class="modal" id="reportJobModal">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="mt-2">Job Report</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form action="" method="post" class="needs-validation" novalidate="">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="form-group position-relative mb-3">
+                              <label for="" class="form-label">What is wrong with this job?</label>
+                              <textarea name="" rows="5" cols="10" class="form-control" id=""
+                                 placeholder="Enter your message"></textarea>
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="form-action d-flex justify-content-between gap-3 mt-3 border-top pt-3">
+                              <button class="btn btn-danger btn-sm">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal" id="hideJobModal">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="mt-2">Hide Job</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form action="" method="post" class="needs-validation" novalidate="">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="form-group position-relative mb-3">
+                              <label for="" class="form-label">Do you want to permanently hide the job?</label>
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="form-action d-flex justify-content-between gap-3 mt-3 border-top pt-3">
+                              <button class="btn btn-danger btn-sm">No</button>
+                              <button type="submit" class="btn btn-primary btn-sm">Yes</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- job details modal -->
+   </div>
+
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+
+   <!-- end bootstrap and jquery cdn link -->
+   <!-- custom javascript -->
+   <script src="../assets/js/custom.js"></script>
+   <script src="../assets/js/master.js"></script>
+   <!-- custom javascript -->
+   <script>
+      document.querySelectorAll(".choices-select").forEach(function (select) {
+         new Choices(select, {
+            searchEnabled: false,
+            itemSelectText: "",
+         });
+      });
+   </script>
+</body>
+
+</html>

@@ -10,7 +10,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
@@ -147,7 +146,6 @@
     }
   }
 
-
   .footer-bottom {
     .row {
       flex-direction: column;
@@ -158,7 +156,6 @@
     .social-icon {
       justify-content: center !important;
     }
-
   }
 
   .footerContainer .social-media,
@@ -295,8 +292,9 @@
     }
   }
 
-  .all-task .card {
-    padding: 0;
+  .all-task .card,
+  .my-jobs .card {
+    padding: 0 !important;
     border: 0;
   }
 

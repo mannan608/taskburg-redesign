@@ -10,6 +10,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
@@ -273,6 +274,12 @@
   h4 {
     font-size: 20px;
   }
+
+  .my-jobs .table-responsive {
+    .title {
+      width: 150px;
+    }
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -283,6 +290,13 @@
       width: 100% !important;
     }
   }
+
+  .my-jobs .table-responsive {
+    .rated {
+      display: none !important;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 540px) {
@@ -316,12 +330,12 @@
   }
 
   .job-summary {
-    ul {
+    .summary-list {
       gap: 10px !important;
+    }
 
-      li {
-        padding-bottom: 10px !important;
-      }
+    .cardRow {
+      padding-bottom: 10px !important;
     }
   }
 
@@ -447,11 +461,46 @@
     font-size: 14px !important;
     line-height: 18px !important;
   }
+
+  .my-jobs .table-responsive {
+    .title {
+      width: 104px;
+    }
+  }
 }
 
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 460px) {
+  .feature-menu-content {
+    & .card-item {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 412px) {
   .desktop-logo {
     width: 115px;
+  }
+
+  .my-jobs .table-responsive {
+    .title {
+      width: 100px;
+    }
+  }
+
+  .table-responsive {
+    .cost {
+      width: 50px;
+    }
+  }
+
+  .table-responsive {
+    .tbprogress {
+      width: 100px;
+    }
   }
 }
 
@@ -472,5 +521,10 @@
 @media only screen and (max-width: 360px) {
   .desktop-logo {
     width: 94px;
+  }
+
+  h6 {
+    font-size: 13px !important;
+    line-height: 16px !important;
   }
 }

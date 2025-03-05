@@ -73,14 +73,18 @@ body {
   }
 
   .tbprogress {
-    width: 100px;
+    width: 120px;
   }
 
   .rated {
-    width: 74px;
+    width: 84px;
   }
 
   .status {
+    width: 80px;
+  }
+
+  .cost {
     width: 60px;
   }
 }
@@ -314,3 +318,221 @@ body {
   border-radius: 4px;
   color: var(--bs-white);
 }
+
+.example-Screenshot .images {
+  width: 134px;
+  height: 80px;
+  border-radius: 4px;
+
+  img {
+    border-radius: 4px;
+
+  }
+}
+
+#imageModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: auto; */
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#modalImage {
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+}
+
+.post-job .contactForm {
+  width: calc(100% - 355px);
+}
+
+.post-job .jobSummary {
+  width: 330px;
+}
+
+.target_zone,
+.task-category {
+  flex-wrap: wrap;
+}
+
+.contactForm .target_zone {
+  .form-check {
+    padding-left: 0;
+    width: fit-content;
+  }
+
+  .form-check-label {
+    font-weight: 400;
+    color: var(--bs-neutral-900);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 24px;
+    border: 1px solid var(--bs-neutral-300);
+    border-radius: 4px;
+    background: var(--bs-white);
+  }
+
+  .form-check-input:checked+.form-check-label {
+    border: 1px solid var(--bs-primary-500);
+    background: #E6ECF5;
+    color: var(--bs-primary-500);
+  }
+}
+
+.form-action {
+  .nextBtn {
+    width: 160px !important;
+  }
+}
+
+.jobSummary .lists {
+  .selected {
+    row-gap: 3px !important;
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--bs-neutral-900);
+    }
+  }
+}
+
+.jobSummary .country-lists {
+  p {
+    width: 64px;
+  }
+
+  .selected {
+    width: calc(100% - 72px);
+  }
+}
+
+.jobSummary .category-lists {
+  p {
+    width: 74px;
+  }
+
+  .selected {
+    width: calc(100% - 82px);
+  }
+}
+
+.jobSummary .sub-category-lists {
+  p {
+    width: 104px;
+  }
+
+  .selected {
+    width: calc(100% - 112px);
+  }
+}
+
+.jobSummary .note {
+  background: var(--bs-danger-50);
+  padding: 3px 4px;
+}
+
+/* step tracking */
+.streamline {
+  width: calc(100% - 180px);
+  margin-left: 30px;
+}
+
+.streamline .step {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  align-items: start;
+}
+
+.streamline .step .tracking_content {
+  width: calc(100% - 54px);
+}
+
+.streamline .step .date-time p {
+  color: var(--bs-neutral-500);
+  font-size: 13px;
+}
+
+.streamline .step .step-icon::after {
+  content: "";
+  background: #d4dae1;
+  width: calc(100% - 40px);
+  height: 1px;
+  display: block;
+  /* position: absolute; */
+  left: 40px;
+  margin: 8px 0;
+}
+
+.streamline .step .step-icon {
+  width: 100%;
+  min-height: fit-content;
+  max-height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.streamline .step .step-icon .step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bs-neutral-300);
+  color: var(--bs-neutral-500) !important;
+}
+
+.streamline .step .step-icon .step-circle h6 {
+  color: var(--bs-neutral-500);
+}
+
+.streamline .step .step-icon .step-circle.isComplete {
+  border: 1px solid var(--bs-primary-500) !important;
+}
+
+.streamline .step .step-icon .step-circle.isComplete h6 {
+  color: var(--bs-neutral-900) !important;
+}
+
+.streamline .step:last-child .step-icon::after {
+  width: 0px;
+  height: 0;
+}
+
+.tracking-steps {
+  display: flex;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  background-color: var(--bs-primary-500);
+  opacity: 70%;
+  cursor: not-allowed;
+}
+
+.step-tracker {
+  width: 50%;
+}
+
+/* .streamline .step:last-child {
+  width: 18%;
+  height: 40px;
+} */
+
+/* step tracking */

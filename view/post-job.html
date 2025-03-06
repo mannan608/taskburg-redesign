@@ -182,8 +182,8 @@
                <div class="logo">
                   <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
                </div>
-               <div class="close-btn ">
-                  <img src="../assets/images/close.png" alt="">
+               <div class="mobile-menu-close ">
+                  <!-- <img src="../assets/images/close.png" alt=""> -->
                </div>
             </div>
             <div class="divider"></div>
@@ -203,9 +203,9 @@
                   <div class="postContainer mt-3 d-flex gap-4">
                      <div class="contactForm">
                         <div class="card p-3">
-                           <form action="">
+                           <form class="multi-step-form" onsubmit="submitForm(event)">
                               <!-- Targeting Zone -->
-                              <div class="row gap-3">
+                              <div class="row form-step active" id="step-1">
                                  <div class="col-sm-12">
                                     <h6 class="mb-3">Targeting Zone</h6>
                                     <div class="target_zone d-flex align-items-center gap-3">
@@ -246,10 +246,9 @@
                                           </label>
                                        </div>
                                     </div>
-
                                  </div>
                                  <div class="col-sm-12">
-                                    <h6 class="mb-1">Select Countries</h6>
+                                    <h6 class="mb-1 mt-3">Select Countries</h6>
                                     <p><span class="fw-500">Note : </span>Select all countries or select any country
                                        (make sure to put
                                        your targeting region in the country selection) and any country you don't select
@@ -301,12 +300,284 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-action mt-4 d-flex justify-content-end">
-                                       <button class="btn btn-primary btn-sm nextBtn">Next</button>
+                                       <button class="btn btn-primary btn-sm nextBtn" onclick="nextStep()">Next</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Targeting Zone -->
+
+                              <!-- Job Category -->
+                              <div class="row form-step" id="step-2">
+                                 <div class="col-sm-12">
+                                    <h6 class="mb-3">Choose the job category</h6>
+                                    <div class="target_zone d-flex align-items-center gap-3">
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_1">
+                                          <label class="form-check-label" for="zone_1">
+                                             Ads Click, SEO, Visit, Search, Engage
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_2">
+                                          <label class="form-check-label" for="zone_2">
+                                             SEO
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_3">
+                                          <label class="form-check-label" for="zone_3">
+                                             Mobile Application
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_4">
+                                          <label class="form-check-label" for="zone_4">
+                                             Identity Verification
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_5">
+                                          <label class="form-check-label" for="zone_5">
+                                             Logo/Others Design
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="radio" name="zone" id="zone_6">
+                                          <label class="form-check-label" for="zone_6">
+                                             Discord
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <h6 class="mb-1 mt-3">Choose the subcategory</h6>
+                                    <div class="target_zone d-flex align-items-center gap-3 mt-3">
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_7">
+                                          <label class="form-check-label" for="zone_7">
+                                             Verify
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_8">
+                                          <label class="form-check-label" for="zone_8">
+                                             Join a Channel
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_9">
+                                          <label class="form-check-label" for="zone_9">
+                                             Join a Group
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_10">
+                                          <label class="form-check-label" for="zone_10">
+                                             Africa
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_11">
+                                          <label class="form-check-label" for="zone_11">
+                                             South America
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input d-none" type="checkbox" name="zone"
+                                             id="zone_12">
+                                          <label class="form-check-label" for="zone_12">
+                                             North America
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-action mt-4 d-flex justify-content-end">
+                                       <button class="btn btn-primary btn-sm nextBtn" onclick="nextStep()">Next</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Job description and proof -->
+                              <div class="row form-step" id="step-3">
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Job Title</label>
+                                       <input type="text" class="form-control" placeholder="Write Job title here">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Job Details</label>
+                                       <textarea name="" placeholder="Write Job details here" class="form-control"
+                                          id=""></textarea>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative">
+                                       <label for="" class="form-label">Thumbnail Image (Optional)</label>
+                                       <div class="uploadedContainer position-relative d-flex gap-3 align-items-center">
+                                          <div class="dragDrop-area attach-file"><input type="file" name="attachment"
+                                                class="form-control fileInput" id="files"><label
+                                                class="uploaded-label w-100 h-100 font-14 fw-500  d-flex gap-1 align-items-center justify-content-center"
+                                                for="files"><img src="../assets/images/upload_file_20.svg" alt=""
+                                                   class="w-auto h-auto">
+                                                <p class="font-14 fw-500 text-primary">Choose file</p>
+                                             </label></div>
+                                          <p>No file selected</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="mt-3 mb-3 d-flex align-items-center gap-2">
+                                       <h6 class="fw-600">Required proof the job was completed </h6>
+
+                                       <div class="dropdown">
+                                          <button class="btn btn-primary btn-x-sm font-16 dropdown-toggle" type="button"
+                                             data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                class="fa-solid fa-info"></i></button>
+                                          <div class="dropdown-menu p-3">
+                                             <h5 class="text-white fw-600 text-center mb-3">Important</h5>
+                                             <p class="text-white">A charge of 0.005 will be deducted for each
+                                                screenshot taken.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mt-3">
+                                       <label for="" class="form-label">Proof 1</label>
+                                       <div class="proof d-flex gap-3">
+                                          <div class="proof-input w-50">
+                                             <div class="form-group position-relative mb-3">
+                                                <input name="" placeholder="Write your proof 1" class="form-control"
+                                                   id="">
+                                             </div>
+                                          </div>
+                                          <div class="proof-select w-50">
+                                             <div class="form-group position-relative">
+                                                <select class="choices-select form-control">
+                                                   <option selected>Proof Type 1</option>
+                                                   <option value="1">Text Proof</option>
+                                                   <option value="2">Image Proof</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative">
+                                       <label for="" class="form-label">Proof 2</label>
+                                       <div class="proof d-flex gap-3">
+                                          <div class="proof-input w-50">
+                                             <div class="form-group position-relative mb-3">
+                                                <input name="" placeholder="Write your proof 2" class="form-control"
+                                                   id="">
+                                             </div>
+                                          </div>
+                                          <div class="proof-select w-50">
+                                             <div class="form-group position-relative">
+                                                <select class="choices-select form-control">
+                                                   <option selected>Proof Type 2</option>
+                                                   <option value="1">Text Proof</option>
+                                                   <option value="2">Image Proof</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative">
+                                       <label for="" class="form-label">Proof 3</label>
+                                       <div class="proof d-flex gap-3">
+                                          <div class="proof-input w-50">
+                                             <div class="form-group position-relative mb-3">
+                                                <input name="" placeholder="Write your proof 3" class="form-control"
+                                                   id="">
+                                             </div>
+                                          </div>
+                                          <div class="proof-select w-50">
+                                             <div class="form-group position-relative">
+                                                <select class="choices-select form-control">
+                                                   <option selected>Proof Type 3</option>
+                                                   <option value="1">Text Proof</option>
+                                                   <option value="2">Image Proof</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative">
+                                       <label for="" class="form-label">Proof 4</label>
+                                       <div class="proof d-flex gap-3">
+                                          <div class="proof-input w-50">
+                                             <div class="form-group position-relative mb-3">
+                                                <input name="" placeholder="Write your proof 4" class="form-control"
+                                                   id="">
+                                             </div>
+                                          </div>
+                                          <div class="proof-select w-50">
+                                             <div class="form-group position-relative">
+                                                <select class="choices-select form-control">
+                                                   <option selected>Proof Type 4</option>
+                                                   <option value="1">Text Proof</option>
+                                                   <option value="2">Image Proof</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-action mt-4 d-flex justify-content-end">
+                                       <button class="btn btn-primary btn-sm nextBtn" onclick="nextStep()">Next</button>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Targeting Zone -->
+                              <!-- Job Pricing -->
+                              <div class="row form-step" id="step-4">
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Freelancer Needed</label>
+                                       <input name="" placeholder="Write freelancer required" class="form-control"
+                                          id="">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Worker Earn</label>
+                                       <input name="" placeholder="Write reward amount" class="form-control" id="">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Work Duration</label>
+                                       <input name="" placeholder="Write work duration" class="form-control" id="">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group position-relative mb-3">
+                                       <label for="" class="form-label">Work Duration</label>
+                                       <input name="" placeholder="Write work duration" class="form-control" id="">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-action mt-4 d-flex justify-content-end">
+                                       <button class="btn btn-primary btn-sm nextBtn"
+                                          onclick="submitForm()">Submit</button>
+                                    </div>
+                                 </div>
+
+                              </div>
 
                            </form>
                         </div>
@@ -345,7 +616,7 @@
                                     </div>
                                  </div>
                               </div>
-                              <button class="btn btn-primary btn-sm">Next</button>
+                              <button class="btn btn-primary btn-sm nextBtn">Next</button>
                            </div>
                         </div>
                      </div>
@@ -483,6 +754,36 @@
             itemSelectText: "",
          });
       });
+   </script>
+   <script>
+      let currentStep = 1;
+      const totalSteps = document.querySelectorAll(".form-step").length;
+
+      function showStep(step) {
+         const steps = document.querySelectorAll('.form-step');
+         steps.forEach((stepElement, index) => {
+            stepElement.classList.toggle('active', index + 1 === step);
+         });
+      }
+
+      function nextStep() {
+         if (currentStep < totalSteps) {
+            currentStep++;
+            showStep(currentStep);
+         }
+      }
+
+      function prevStep() {
+         if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+         }
+      }
+
+      function submitForm(event) {
+         event.preventDefault(); // Prevent page reload
+         // alert('Form submitted successfully!');
+      }
    </script>
 </body>
 

@@ -26,6 +26,24 @@
   .desktop-logo {
     width: 94px;
   }
+  .postContainer {
+    flex-direction: column;
+    gap: 48px !important;
+  }
+  .post-job .contactForm {
+    width: 100%;
+  }
+  .post-job .jobSummary {
+    width: 100%;
+  }
+  .form-action {
+    .nextBtn {
+      width: 140px !important;
+    }
+  }
+  .contactForm .target_zone {
+    gap: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -204,6 +222,11 @@
     width: 100%;
     padding: 0;
   }
+  .form-action {
+    .nextBtn {
+      width: 130px !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 710px) {
@@ -309,6 +332,11 @@
   .my-jobs .table-responsive {
     .title {
       width: 150px;
+    }
+  }
+  .form-action {
+    .nextBtn {
+      width: 120px !important;
     }
   }
 }
@@ -493,6 +521,24 @@
       width: 104px;
     }
   }
+
+  .streamline .step {
+    width: 60px;
+  }
+  .streamline {
+    margin-left: 10px;
+  }
+  .trackContainer .nextBtn {
+    margin-left: -4px;
+  }
+  .proof {
+    flex-direction: column;
+    gap: 0 !important;
+    margin-bottom: 16px;
+    .w-50 {
+      width: 100% !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -505,6 +551,16 @@
   }
   .desktop-logo {
     width: 70px;
+  }
+  .streamline .step {
+    width: 48px;
+  }
+  .streamline .step .step-icon::after {
+    width: calc(100% - 30px);
+  }
+  .streamline .step .step-icon .step-circle {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -540,6 +596,11 @@
       }
     }
   }
+  .form-action {
+    .nextBtn {
+      width: 110px !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -559,6 +620,13 @@
       a {
         font-size: 13px;
         line-height: 16px;
+      }
+    }
+  }
+  .jobSummary .lists {
+    & .selected {
+      span {
+        font-size: 12px;
       }
     }
   }

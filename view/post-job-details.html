@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Master admin panel</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <link rel="icon" href="assets/images/brand/favicon.ico">
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+   <!-- end bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="../assets/css/master.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+   <div class="app">
+      <div class="navbar-wrapper">
+         <div class="container-fluid h-100">
+            <nav class="navbar h-100">
+               <div class="navbar-brand d-flex align-items-center gap-2">
+                  <div class="mobile-nav-toggler">
+                     <img src="../assets/images/hamburger.svg" alt="" class="w-auto h-auto">
+                  </div>
+                  <a href="/" class="d-inline-flex link-body-emphasis desktop-logo">
+                     <img src="../assets/images/brand/logo.svg" alt="">
+                  </a>
+
+               </div>
+               <ul class="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Post
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Post Job</a></li>
+                        <li><a class="dropdown-item" href="#">My Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Work
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Find Jobs</a></li>
+                        <li><a class="dropdown-item" href="#">Finished Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Deposit
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Deposit</a></li>
+                        <li><a class="dropdown-item" href="#">Withdraw</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Setting
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">My Support</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Refer & Earn
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Refer & Earn</a></li>
+                        <li><a class="dropdown-item" href="#">Frelancer</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="mobile-nav">
+                  <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find
+                        Jobs</a></li>
+                  <li> <a href="#"><i class="fa-brands fa-creative-commons-nd"></i> Post
+                        Job</a></li>
+                  <li><a href="#"><i class="fa-solid fa-list-check"></i> My Jobs</a></li>
+                  <li><a href="#"><i class="fa-regular fa-square-check"></i> Finished
+                        Jobs</a></li>
+                  <li><a href="#"><i class="fa-solid fa-building-columns"></i> Deposit</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-dollar-sign"></i> Withdraw</a></li>
+                  <li><a href="#"><i class="fa-solid fa-share-nodes"></i> Refer &amp; Earn</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-phone"></i> Support</a></li>
+                  <li><a href="#"><i class="fa-regular fa-user"></i> Freelancer</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-gear"></i></i>
+                        Setting</a></li>
+
+               </ul>
+               <div class="navbar-action d-flex gap-3 justify-content-end">
+                  <a href="notification.html" class="notification-icon action-menu position-relative">
+                     <img src="../assets/images/notification_24.svg" alt="" class="w-auto h-auto">
+                     <span class="badge text-bg-danger">4</span>
+                  </a>
+                  <div class="dropdown text-end profile-icon">
+                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                     </a>
+                     <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Hello Mannan</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                     </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">Post Job</button>
+               </div>
+
+            </nav>
+            <div class="short-menu">
+               <div class="feature-menu">
+                  <svg width="540" height="42" viewBox="0 0 540 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="mask0_3_7" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="540"
+                        height="42">
+                        <path d="M540 0H0V42H540V0Z" fill="white" />
+                     </mask>
+                     <g mask="url(#mask0_3_7)">
+                        <path
+                           d="M0 0L8.154 32.7096C8.82124 35.3785 10.2765 37.7342 12.2952 39.4132C14.314 41.0922 16.784 42.0012 19.3243 42H520.668C523.207 41.9994 525.675 41.0895 527.693 39.4107C529.71 37.7318 531.164 35.3771 531.83 32.7096L540 0H0Z"
+                           fill="white" />
+                     </g>
+                  </svg>
+                  <div class="feature-menu-content">
+                     <a href="assign-parcel.html" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/pending_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Pending : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/approve_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Earned : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/deposit_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Deposit : 20000</h6>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mobile-menu">
+         <div class="menu-backdrop"></div>
+         <nav class="mobile-menu-nav">
+            <div class="mobile-brand d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
+               </div>
+               <div class="close-btn ">
+                  <img src="../assets/images/close.png" alt="">
+               </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-outer">
+
+
+            </div>
+         </nav>
+      </div>
+      <div class="main-wrapper">
+         <div class="container-fluid">
+            <div class="dashboard">
+               <div class="my-jobs-details">
+                  <div class="title mb-3">
+                     <a href="my-jobs.html" class="font-18 fw-600 d-flex align-items-center gap-1 backBtn"><img
+                           src="../assets/images/back_icon.svg" alt="" class="w-auto h-auto">
+                        Back</a>
+                  </div>
+                  <div class="card p-3 ">
+                     <div class="d-flex gap-3 justify-content-between">
+                        <div class="job-title d-flex  gap-1 flex-column">
+                           <h5 class="fw-600">The quick
+                              brown fox jumps over lazy dogs daily</h5>
+                           <p><i class="fa-solid fa-earth-americas me-1"></i>
+                              International World Wide</p>
+                        </div>
+                        <h4>$200</h4>
+                     </div>
+                     <div class="job-action mt-4 d-flex gap-3">
+                        <button class="btn btn-primary btn-x-sm"><i class="fa-regular fa-circle-play me-1"></i>
+                           Running</button>
+                        <button class="btn btn-primary btn-x-sm"><i
+                              class="fa-regular fa-circle-pause me-1"></i>Pouse</button>
+                        <button class="btn btn-primary btn-x-sm"><i class="fa-regular fa-rectangle-list me-1"></i>Submit
+                           Task</button>
+                        <button class="btn btn-primary btn-x-sm" data-bs-toggle="modal"
+                           data-bs-target="#boostJobModal"><i class="fa-solid fa-chart-line me-1"></i>Boost
+                           Job</button>
+                        <button class="btn btn-primary btn-x-sm" data-bs-toggle="modal"
+                           data-bs-target="#increaseJobModal"><i class="fa-regular fa-circle-user me-1"></i> Increase
+                           Job</button>
+                        <button class="btn btn-danger btn-x-sm"><i class="fa-regular fa-trash-can me-1"></i>
+                           Delete</button>
+                     </div>
+                  </div>
+                  <div class="job-summary mt-4">
+                     <div class="card p-3">
+                        <div class="summary-list d-flex flex-column gap-3 ">
+                           <div class="cardRow border-bottom pb-3 gap-3 d-flex justify-content-between">
+                              <div class="jobId w-50">
+                                 <p><i class="fa-solid fa-briefcase me-1"></i> Job ID</p>
+                                 <h6 class="mt-1 ps-3">2wjsKJS1NS1SDS</h6>
+                              </div>
+                              <div class="jobDone w-50">
+                                 <p><i class="fa-solid fa-square-check me-1"></i> Job Done</p>
+                                 <h6 class="mt-1  ps-3">40/240</h6>
+                              </div>
+                           </div>
+
+                           <div class="cardRow border-bottom gap-3 pb-3 d-flex justify-content-between">
+                              <div class="employee w-50">
+                                 <p><i class="fa-solid fa-user me-1"></i> Employer</p>
+                                 <h6 class="mt-1 ps-3 d-flex align-items-center gap-3 cursor-pointer">Kawser080 <i
+                                       class="fa-regular fa-copy"></i></h6>
+                              </div>
+                              <div class="duration w-50">
+                                 <p><i class="fa-solid fa-clock me-1"></i>Duration</p>
+                                 <h6 class="mt-1 ps-3">5 Days </h6>
+                              </div>
+                           </div>
+                           <div class="cardRow d-flex justify-content-between gap-3">
+                              <div class="country w-50">
+                                 <p><i class="fa-solid fa-earth-americas me-1"></i> Excluded countries</p>
+                                 <div class="ps-4 d-flex flex-wrap gap-2">
+                                    <h6>Bangladesh</h6>
+                                    <h6>Bangladesh</h6>
+                                    <h6>Bangladesh</h6>
+                                    <h6>Bangladesh</h6>
+                                    <h6>Bangladesh</h6>
+                                    <a class="text-primary" data-bs-toggle="collapse" href="#collapseExample"
+                                       role="button" aria-expanded="false" aria-controls="collapseExample">
+                                       See
+                                       More
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="category w-50">
+                                 <p><i class="fa-solid fa-layer-group me-1"></i> Category</p>
+                                 <h6 class="mt-1 ps-3">Youtube > Watch video (1-5 min) </h6>
+                              </div>
+                           </div>
+                           <div class="collapse" id="collapseExample">
+                              <div class="card-body p-0">
+                                 <div class="collapseCountry d-flex gap-2 flex-wrap border-top pt-2">
+                                    <p>Bangladesh</p>
+                                    <p>Pakistan</p>
+                                    <p>Bangladesh</p>
+                                    <p>Pakistan</p>
+                                    <p>Bangladesh</p>
+                                    <p>Pakistan</p>
+                                    <p>Bangladesh</p>
+                                    <p>Pakistan</p>
+                                    <p>Bangladesh</p>
+                                    <p>Pakistan</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="my-job-description mt-4">
+                     <div class="card p-3">
+                        <h5 class="fw-600">Job Description</h5>
+                        <div class="descrpt">
+                           🔰 আসসালামু আলাইকুম ❤<br>
+                           <br>
+                           🛑 সঠিক ভাবে কাজ করলে সাথে সাথে পেমেন্ট পাবেন📍Job offers<br>
+                           🛑 আমাদের সতর্কবার্তা অবশ্যই ভালোভাবে পড়বেন 📍<br>
+                           <br>
+                           🛑 ভিডিও দেখার সঠিক নিয়ম❓<br>
+                           1️⃣ ভিডিও সম্পূর্ণ ৮.১৭ মিনিট দেখুন। স্কিপ ছাড়া 📌<br>
+                           2️⃣ ভিডিও চলাকালীন সময়ে স্ক্রিনের বাম পাশে ৮ টি কোড আসবে। সেগুলো মনে রাখুন 📌<br>
+                           <br>
+                           🛑 কীভাবে ভিডিওটি খুঁজে বের করবেন❓<br>
+                           1️⃣ প্রথমে YouTube অ্যাপে যান।<br>
+                           2️⃣ সার্চ বারে লিখুন _👇<br>
+                           👇👉 লুডু খেলে টাকা ইনকাম বিকাশে<br>
+                           <br>
+                           অথবা সার্চ করুন 👉 লুডু খেলে টাকা আয় বিকাশে <br>
+                           অথবা সার্চ করুন 👉 Ludo Khele taka income 2025<br>
+                           অথবা সার্চ করুন 👉 ঘরে বসে থেকেই ইনকাম <br>
+                           অথবা সার্চ করুন 👉 Ludo earning best app<br>
+                           অথবা সার্চ করুন 👉 Online Income 2025<br>
+                           অথবা সার্চ করুন 👉 লুডু খেলে বিকাশে পেমেন্ট<br>
+                           অথবা সার্চ করুন 👉 Best Game App<br> <br>
+                           3️⃣ নিচের থাম্বনেইল এর সাথে মিল রেখে সঠিক ভিডিও টি খুঁজুন।<br>
+                           4️⃣ ভিডিওটি খুঁজে পেলে Play করুন এবং সম্পূর্ণ কাজ গুলো Complete করুন।<br>
+                           <br>
+                           <br>
+                           ⛔ জরুরি নোটিস ও সতর্কবার্তা ⛔<br>
+                           <br>
+                           📌 ভিডিও টি অবশ্যই সার্চ করে বের করতে হবে।<br>
+                           <br>
+                           📌 ভিডিও স্কিপ করবেন না ও ডাবল স্পিডে ভিডিও দেখলেও পেমেন্ট পাবেন না।<br>
+                           <br>
+                           📌 ৮ টি কোড সঠিক ভাবে জমা দিন ও ওখানে কোড ছাড়া বাড়তি কিছু লিখবেন না। যেমন উদাহরণ:
+                           72096353<br>
+                           <br>
+                           📌 প্রতারনা করার চেষ্টা করলে একাউন্ট বাতিল করে দেওয়া হবে। মনে রাখবেন আমাদের কে দিয়ে আপনারা
+                           আপনাদের দিয়ে আমরা ♻<br>
+                           <br>
+                           📌 আপনাদের কাছে যদি আমাদের ভিডিও গুলো ভালো লেগে থাকে তাহলে অবশ্যই চ্যানেলটি সাবস্ক্রাইব করে
+                           পাশে থাকবেন 💖<br>
+                           <br>
+                           🎉 কোড এবং স্ক্রিনশট সঠিক থাকলে দ্রুত চেক করা হবে। এবং সাথে সাথে পেমেন্ট করা হবে 💖<br>
+
+                           <br>
+                           🎯 সতর্কতার সাথে কাজ করুন এবং পেমেন্ট গ্রহণ করুন 🎯 🔰♥ ধন্যবাদ Trusted Income এর সাথে থাকার
+                           জন্য ♥🔰
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footerContainer">
+         <div class="container-fluid">
+            <footer>
+               <div class="footer-bottom mt-4">
+                  <div class="row">
+                     <div class="col">
+                        <a href="#" class="footer-brand p-3">
+                           <img src="../assets/images/brand/footer_logo.svg" alt="" class="w-auto h-auto">
+                        </a>
+                        <p class="text-white mt-2 text-center">Taskburg is a small workplace that gradually turns into a
+                           big
+                           success.</p>
+                     </div>
+                     <div class="col company">
+                        <h5 class="fw-600 text-white">Company</h5>
+                        <ul class="d-flex flex-column link gap-1 mt-3">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="col social-media">
+                        <h5 class="fw-600 text-white">Follow us </h5>
+                        <ul class="d-flex gap-3 social-icon mt-3">
+                           <li><a href="#" class="text-white "><i class="fa-brands fa-square-instagram"></i></a>
+                           </li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <p class="font-14 fw-500 mt-5 text-center text-white">© 2024 - 2025 Taskburg. All rights reserved</p>
+            </footer>
+         </div>
+      </div>
+      <!-- modal  -->
+      <div class="modal" id="boostJobModal">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="mt-2">Boost Job</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form action="" method="post" class="needs-validation" novalidate="">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="form-group position-relative mb-3">
+                              <label for="" class="form-label">Boost Minute</label>
+                              <input type="text" class="form-control" id="" placeholder="Enter your minite">
+                              <span class="font-12 mt-1">Estimate Cost : $0.127</span>
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="form-action d-flex justify-content-between gap-3 mt-3 border-top pt-3">
+                              <button class="btn btn-danger btn-sm">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal" id="increaseJobModal">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="mt-2">Increase Worker</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form action="" method="post" class="needs-validation" novalidate="">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="form-group position-relative mb-3">
+                              <label for="" class="form-label">Increase Member</label>
+                              <input type="text" class="form-control" id="" placeholder="Enter your qty">
+                              <span class="font-12 mt-1">Estimate Cost : $0.127</span>
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="form-action d-flex justify-content-between gap-3 mt-3 border-top pt-3">
+                              <button class="btn btn-danger btn-sm">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+
+   <!-- end bootstrap and jquery cdn link -->
+   <!-- custom javascript -->
+   <script src="../assets/js/custom.js"></script>
+   <script src="../assets/js/master.js"></script>
+   <!-- custom javascript -->
+   <script>
+      document.querySelectorAll(".choices-select").forEach(function (select) {
+         new Choices(select, {
+            searchEnabled: false,
+            itemSelectText: "",
+         });
+      });
+   </script>
+</body>
+
+</html>

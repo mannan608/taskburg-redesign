@@ -335,8 +335,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 100%;
-  height: auto; */
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
@@ -381,7 +379,7 @@ body {
     background: var(--bs-white);
   }
 
-  .form-check-input:checked + .form-check-label {
+  .form-check-input:checked+.form-check-label {
     border: 1px solid var(--bs-primary-500);
     background: #e6ecf5;
     color: var(--bs-primary-500);
@@ -547,9 +545,11 @@ fieldset:disabled .btn {
 .form-step {
   display: none;
 }
+
 .form-step.active {
   display: block;
 }
+
 .multi-step-form .dropdown-menu {
   width: 260px;
   background: var(--bs-warning-500);
@@ -559,4 +559,13 @@ fieldset:disabled .btn {
 
 .trackContainer .nextBtn {
   margin-left: -20px;
+}
+
+.checkYes {
+  display: none;
+}
+
+/* Show .checkYes when "Yes" is checked */
+.form-group:has(#flexRadioYes:checked)+.checkYes {
+  display: block;
 }

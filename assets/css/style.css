@@ -87,7 +87,25 @@ body {
   .cost {
     width: 60px;
   }
+
+  .tbselect {
+    width: 126px;
+  }
+
+  .details_link {
+    width: 94px;
+  }
+
+  .user_link {
+    width: 120px;
+  }
+
+  .country {
+    width: 94px;
+  }
 }
+
+
 
 .navbar-wrapper .profile-icon {
   img {
@@ -568,4 +586,81 @@ fieldset:disabled .btn {
 /* Show .checkYes when "Yes" is checked */
 .form-group:has(#flexRadioYes:checked)+.checkYes {
   display: block;
+}
+
+.not-satisfy-check,
+.revision-check {
+  display: none;
+}
+
+/* Show when the respective radio button is checked */
+.form-group:has(#not-satisfy:checked)+.not-satisfy-check {
+  display: block;
+}
+
+.form-group:has(#revision:checked)+.revision-check {
+  display: block;
+}
+
+#not-satisfy:checked {
+  background-color: var(--bs-danger-500);
+
+}
+
+.profile {
+  .user-info {
+    width: 260px;
+  }
+
+  .user-summary {
+    width: calc(100% - 284px);
+  }
+}
+
+.profileImgContainer .profile-upload {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+.profile-active .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bs-success-500);
+}
+
+
+
+.pieChartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+
+.chart {
+  width: 200px;
+  height: 200px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.legend span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
 }

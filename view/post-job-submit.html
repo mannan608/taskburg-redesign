@@ -198,7 +198,7 @@
             <div class="dashboard">
                <div class="my-jobs-details">
                   <div class="title mb-3">
-                     <a href="my-jobs.html" class="font-18 fw-600 d-flex align-items-center gap-1 backBtn"><img
+                     <a href="post-job-details.html" class="font-18 fw-600 d-flex align-items-center gap-1 backBtn"><img
                            src="../assets/images/back_icon.svg" alt="" class="w-auto h-auto">
                         Back</a>
                   </div>
@@ -217,133 +217,58 @@
                            Running</button>
                         <button class="btn btn-primary btn-x-sm"><i
                               class="fa-regular fa-circle-pause me-1"></i>Pouse</button>
-                        <a href="post-job-submit.html" class="btn btn-primary btn-x-sm anchorBtn"><i
-                              class="fa-regular fa-rectangle-list me-1"></i>Submit
-                           Task</a>
-                        <button class="btn btn-primary btn-x-sm" data-bs-toggle="modal"
-                           data-bs-target="#boostJobModal"><i class="fa-solid fa-chart-line me-1"></i>Boost
-                           Job</button>
-                        <button class="btn btn-primary btn-x-sm" data-bs-toggle="modal"
-                           data-bs-target="#increaseJobModal"><i class="fa-regular fa-circle-user me-1"></i> Increase
-                           Job</button>
-                        <button class="btn btn-danger btn-x-sm"><i class="fa-regular fa-trash-can me-1"></i>
-                           Delete</button>
+                        <button class="btn btn-primary btn-x-sm"><i class="fa-regular fa-rectangle-list me-1"></i>Submit
+                           Task</button>
+
                      </div>
                   </div>
-                  <div class="job-summary mt-4">
+                  <div class="post-submit-jobs mt-3">
                      <div class="card p-3">
-                        <div class="summary-list d-flex flex-column gap-3 ">
-                           <div class="cardRow border-bottom pb-3 gap-3 d-flex justify-content-between">
-                              <div class="jobId w-50">
-                                 <p><i class="fa-solid fa-briefcase me-1"></i> Job ID</p>
-                                 <h6 class="mt-1 ps-3">2wjsKJS1NS1SDS</h6>
-                              </div>
-                              <div class="jobDone w-50">
-                                 <p><i class="fa-solid fa-square-check me-1"></i> Job Done</p>
-                                 <h6 class="mt-1  ps-3">40/240</h6>
-                              </div>
-                           </div>
+                        <button class="btn btn-primary btn-sm w-f-c" data-bs-toggle="modal"
+                           data-bs-target="#paidJobModal">Paid All Jobs</button>
+                        <div class="table-responsive mt-3">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th class="tbselect">
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value=""
+                                             id="flexCheckDefault">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                             Select All
+                                          </label>
+                                       </div>
+                                    </th>
+                                    <th class="details_link"> </th>
+                                    <th class="user_link"></th>
+                                    <th class="cost"></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="tbselect">
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="job_Id_1">
+                                          <label class="form-check-label font-12" for="job_Id_1">
+                                             Task Review
+                                          </label>
+                                       </div>
+                                    </td>
+                                    <td class="details_link">
+                                       <a href="submit-job-details.html">
+                                          Task Details
+                                       </a>
+                                    </td>
+                                    <td class="user_link">
+                                       <a href="profile.html" class="d-flex align-items-center gap-1">
+                                          hali446720 <i class="fas fa-external-link-alt"></i>
+                                       </a>
+                                    </td>
+                                    <td class="country">Bangladesh</td>
+                                 </tr>
 
-                           <div class="cardRow border-bottom gap-3 pb-3 d-flex justify-content-between">
-                              <div class="employee w-50">
-                                 <p><i class="fa-solid fa-user me-1"></i> Employer</p>
-                                 <h6 class="mt-1 ps-3 d-flex align-items-center gap-3 cursor-pointer">Kawser080 <i
-                                       class="fa-regular fa-copy"></i></h6>
-                              </div>
-                              <div class="duration w-50">
-                                 <p><i class="fa-solid fa-clock me-1"></i>Duration</p>
-                                 <h6 class="mt-1 ps-3">5 Days </h6>
-                              </div>
-                           </div>
-                           <div class="cardRow d-flex justify-content-between gap-3">
-                              <div class="country w-50">
-                                 <p><i class="fa-solid fa-earth-americas me-1"></i> Excluded countries</p>
-                                 <div class="ps-4 d-flex flex-wrap gap-2">
-                                    <h6>Bangladesh</h6>
-                                    <h6>Bangladesh</h6>
-                                    <h6>Bangladesh</h6>
-                                    <h6>Bangladesh</h6>
-                                    <h6>Bangladesh</h6>
-                                    <a class="text-primary" data-bs-toggle="collapse" href="#collapseExample"
-                                       role="button" aria-expanded="false" aria-controls="collapseExample">
-                                       See
-                                       More
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="category w-50">
-                                 <p><i class="fa-solid fa-layer-group me-1"></i> Category</p>
-                                 <h6 class="mt-1 ps-3">Youtube > Watch video (1-5 min) </h6>
-                              </div>
-                           </div>
-                           <div class="collapse" id="collapseExample">
-                              <div class="card-body p-0">
-                                 <div class="collapseCountry d-flex gap-2 flex-wrap border-top pt-2">
-                                    <p>Bangladesh</p>
-                                    <p>Pakistan</p>
-                                    <p>Bangladesh</p>
-                                    <p>Pakistan</p>
-                                    <p>Bangladesh</p>
-                                    <p>Pakistan</p>
-                                    <p>Bangladesh</p>
-                                    <p>Pakistan</p>
-                                    <p>Bangladesh</p>
-                                    <p>Pakistan</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="my-job-description mt-4">
-                     <div class="card p-3">
-                        <h5 class="fw-600">Job Description</h5>
-                        <div class="descrpt">
-                           🔰 আসসালামু আলাইকুম ❤<br>
-                           <br>
-                           🛑 সঠিক ভাবে কাজ করলে সাথে সাথে পেমেন্ট পাবেন📍Job offers<br>
-                           🛑 আমাদের সতর্কবার্তা অবশ্যই ভালোভাবে পড়বেন 📍<br>
-                           <br>
-                           🛑 ভিডিও দেখার সঠিক নিয়ম❓<br>
-                           1️⃣ ভিডিও সম্পূর্ণ ৮.১৭ মিনিট দেখুন। স্কিপ ছাড়া 📌<br>
-                           2️⃣ ভিডিও চলাকালীন সময়ে স্ক্রিনের বাম পাশে ৮ টি কোড আসবে। সেগুলো মনে রাখুন 📌<br>
-                           <br>
-                           🛑 কীভাবে ভিডিওটি খুঁজে বের করবেন❓<br>
-                           1️⃣ প্রথমে YouTube অ্যাপে যান।<br>
-                           2️⃣ সার্চ বারে লিখুন _👇<br>
-                           👇👉 লুডু খেলে টাকা ইনকাম বিকাশে<br>
-                           <br>
-                           অথবা সার্চ করুন 👉 লুডু খেলে টাকা আয় বিকাশে <br>
-                           অথবা সার্চ করুন 👉 Ludo Khele taka income 2025<br>
-                           অথবা সার্চ করুন 👉 ঘরে বসে থেকেই ইনকাম <br>
-                           অথবা সার্চ করুন 👉 Ludo earning best app<br>
-                           অথবা সার্চ করুন 👉 Online Income 2025<br>
-                           অথবা সার্চ করুন 👉 লুডু খেলে বিকাশে পেমেন্ট<br>
-                           অথবা সার্চ করুন 👉 Best Game App<br> <br>
-                           3️⃣ নিচের থাম্বনেইল এর সাথে মিল রেখে সঠিক ভিডিও টি খুঁজুন।<br>
-                           4️⃣ ভিডিওটি খুঁজে পেলে Play করুন এবং সম্পূর্ণ কাজ গুলো Complete করুন।<br>
-                           <br>
-                           <br>
-                           ⛔ জরুরি নোটিস ও সতর্কবার্তা ⛔<br>
-                           <br>
-                           📌 ভিডিও টি অবশ্যই সার্চ করে বের করতে হবে।<br>
-                           <br>
-                           📌 ভিডিও স্কিপ করবেন না ও ডাবল স্পিডে ভিডিও দেখলেও পেমেন্ট পাবেন না।<br>
-                           <br>
-                           📌 ৮ টি কোড সঠিক ভাবে জমা দিন ও ওখানে কোড ছাড়া বাড়তি কিছু লিখবেন না। যেমন উদাহরণ:
-                           72096353<br>
-                           <br>
-                           📌 প্রতারনা করার চেষ্টা করলে একাউন্ট বাতিল করে দেওয়া হবে। মনে রাখবেন আমাদের কে দিয়ে আপনারা
-                           আপনাদের দিয়ে আমরা ♻<br>
-                           <br>
-                           📌 আপনাদের কাছে যদি আমাদের ভিডিও গুলো ভালো লেগে থাকে তাহলে অবশ্যই চ্যানেলটি সাবস্ক্রাইব করে
-                           পাশে থাকবেন 💖<br>
-                           <br>
-                           🎉 কোড এবং স্ক্রিনশট সঠিক থাকলে দ্রুত চেক করা হবে। এবং সাথে সাথে পেমেন্ট করা হবে 💖<br>
-
-                           <br>
-                           🎯 সতর্কতার সাথে কাজ করুন এবং পেমেন্ট গ্রহণ করুন 🎯 🔰♥ ধন্যবাদ Trusted Income এর সাথে থাকার
-                           জন্য ♥🔰
+                              </tbody>
+                           </table>
                         </div>
                      </div>
                   </div>
@@ -389,11 +314,11 @@
          </div>
       </div>
       <!-- modal  -->
-      <div class="modal" id="boostJobModal">
+      <div class="modal" id="paidJobModal">
          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="mt-2">Boost Job</h5>
+                  <h5 class="mt-2">Submit All Jobs</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                <div class="modal-body">
@@ -401,40 +326,13 @@
                      <div class="row">
                         <div class="col-sm-12">
                            <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Boost Minute</label>
-                              <input type="text" class="form-control" id="" placeholder="Enter your minite">
-                              <span class="font-12 mt-1">Estimate Cost : $0.127</span>
-                           </div>
-                        </div>
-                        <div class="col-sm-12">
-                           <div class="form-action d-flex justify-content-between gap-3 mt-3 border-top pt-3">
-                              <button class="btn btn-danger btn-sm" data-bs-dismiss="modal"
-                                 aria-label="Close">Cancel</button>
-                              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                           </div>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="modal" id="increaseJobModal">
-         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="mt-2">Increase Worker</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <form action="" method="post" class="needs-validation" novalidate="">
-                     <div class="row">
-                        <div class="col-sm-12">
-                           <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Increase Member</label>
-                              <input type="text" class="form-control" id="" placeholder="Enter your qty">
-                              <span class="font-12 mt-1">Estimate Cost : $0.127</span>
+                              <label for="" class="form-label">Rate Of Task</label>
+                              <select class="choices-select form-control">
+                                 <option selected>Select One</option>
+                                 <option value="1">Satify</option>
+                                 <option value="2">Not Satisfy</option>
+                                 <option value="3">Ask for Revision</option>
+                              </select>
                            </div>
                         </div>
                         <div class="col-sm-12">

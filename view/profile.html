@@ -196,66 +196,132 @@
       <div class="main-wrapper">
          <div class="container-fluid">
             <div class="dashboard">
-               <div class="my-jobs">
-                  <div class="marquee-message ">
-                     <p class="d-flex align-items-center justify-content-center text-white fw-500">
-                        <marquee>
-                           Your submitted tasks will be completed within a maximum days
-                        </marquee>
-                     </p>
+               <div class="profile d-flex gap-4 mt-3">
+                  <div class="user-info">
+                     <div class="card p-3">
+                        <div class="profile-section">
+                           <div class="profileImgContainer d-flex align-items-center justify-content-center">
+                              <div class="profile-upload position-relative">
+                                 <img src="../assets/images/avater.svg" alt="" class="avater">
+                              </div>
+                           </div>
+                           <div
+                              class="mt-3 short-info d-flex align-items-center gap-1 flex-column justify-content-center">
+                              <h5>Mannan</h5>
+                              <p>mannan608</p>
+                           </div>
+                           <div class="profile-active d-flex justify-content-between mt-3">
+                              <div class="star">
+                                 <p class="font-14 mb-1">Member Since</p>
+                                 <p class="font-12 fw-500">Oct 12, 2024</p>
+                              </div>
+                              <div class="end ">
+                                 <p class="font-14 mb-1">Last Seen</p>
+                                 <div class="d-flex align-items-center gap-1">
+                                    <label class="circle"></label>
+                                    <p class="font-12"> Active</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="title mt-3">
-                     <h5>My Jobs</h5>
-                  </div>
-                  <div class="card p-3 mt-2">
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <th class="title">Title</th>
-                                 <th class="tbprogress">Progress</th>
-                                 <th class="rated">Not Rated</th>
-                                 <th class="cost">Cost</th>
-                                 <th class="status">status </th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td class="title">
-                                    <a href="post-job-details.html">
-                                       The quick brown fox jumps over lazy dogs daily
-                                    </a>
-                                 </td>
-                                 <td class="tbprogress">5000 /5000</td>
-                                 <td class="rated">
-                                    45
-                                 </td>
-                                 <td class="cost">$020</td>
-                                 <td class="status">
-                                    <div class="alert alert-warning alert-x-sm" role="alert">
-                                       Pending
+                  <div class="user-summary">
+                     <div class="row">
+                        <div class="col-md-6 pe-2">
+                           <div class="employee-performance">
+                              <div class="card p-3">
+                                 <h6>Employer Performance</h6>
+                                 <div class="performance mt-3 d-flex flex-column gap-2">
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Start Jobs : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Finished Jobs : </span> 10</p>
                                     </div>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td class="title">
-                                    <a href="post-job-details.html">
-                                       The quick brown fox jumps over lazy dogs daily
-                                    </a>
-                                 </td>
-                                 <td class="tbprogress">200 /5000</td>
-                                 <td class="rated">
-                                    45
-                                 </td>
-                                 <td class="cost">$020</td>
-                                 <td class="status">
-                                    <div class="alert alert-primary alert-x-sm" role="alert">
-                                       Approved
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Paid Jobs : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Satisfied Jobs : </span> 12%</p>
                                     </div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Avg. Payment : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Pending Jobs : </span> 12%</p>
+                                    </div>
+                                    <div class="flexRow d-flex">
+                                       <p class="text-black"><span class="fw-500 me-2">Last Job : </span> 10</p>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 ps-2">
+                           <div class="worker-performance">
+                              <div class="card p-3">
+                                 <h6>Worker Performance</h6>
+                                 <div class="performance mt-3 d-flex flex-column gap-2">
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Done Jobs : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Not Satisfied : </span> 10</p>
+                                    </div>
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Earned : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Avg. Earned : </span> 12%</p>
+                                    </div>
+                                    <div class="flexRow d-flex justify-content-between">
+                                       <p class="text-black"><span class="fw-500 me-2">Satisfied : </span> 10</p>
+                                       <p class="text-black"><span class="fw-500 me-2">Pending : </span> 12%</p>
+                                    </div>
+                                    <div class="flexRow d-flex">
+                                       <p class="text-black"><span class="fw-500 me-2">Last Work : </span> 10</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-sm-12">
+                           <div class="card p-3 ">
+                              <div class="userChart d-flex gap-4">
+                                 <div class="chartContainer w-50">
+                                    <h6 class="text-center">Micro Jobs Rating Statistics</h6>
+
+                                    <div class="pieChartContainer">
+                                       <div class="chart">
+                                          <canvas class="pieChart" data-values="[75, 25]"
+                                             data-labels='["Satisfied", "Not Satisfied"]'
+                                             data-colors='["#4CAF50", "#E57373"]'></canvas>
+                                       </div>
+                                       <div class="legend">
+                                          <div class="legend-item" data-chart-index="0">
+                                             <span style="background-color: #4CAF50;"></span> Satisfied
+                                          </div>
+                                          <div class="legend-item" data-chart-index="0">
+                                             <span style="background-color: #E57373;"></span> Not Satisfied
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="chartContainer w-50">
+                                    <h6 class="text-center">Micro Job Working Statistics</h6>
+                                    <div class="pieChartContainer">
+                                       <div class="chart">
+                                          <canvas class="pieChart" data-values="[75, 25]"
+                                             data-labels='["Satisfied", "Not Satisfied"]'
+                                             data-colors='["#4CAF50", "#E57373"]'></canvas>
+                                       </div>
+                                       <div class="legend">
+                                          <div class="legend-item" data-chart-index="0">
+                                             <span style="background-color: #4CAF50;"></span> Satisfied
+                                          </div>
+                                          <div class="legend-item" data-chart-index="0">
+                                             <span style="background-color: #E57373;"></span> Not Satisfied
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -300,7 +366,6 @@
          </div>
       </div>
 
-
    </div>
 
    <!-- bootstrap and jquery cdn link -->
@@ -311,6 +376,7 @@
    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
    <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
    <!-- end bootstrap and jquery cdn link -->
    <!-- custom javascript -->
@@ -325,6 +391,57 @@
          });
       });
    </script>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const charts = document.querySelectorAll(".pieChart");
+         const chartInstances = [];
+
+         charts.forEach((canvas, index) => {
+            const ctx = canvas.getContext('2d');
+            const values = JSON.parse(canvas.getAttribute("data-values"));
+            const labels = JSON.parse(canvas.getAttribute("data-labels"));
+            const colors = JSON.parse(canvas.getAttribute("data-colors"));
+
+            const chart = new Chart(ctx, {
+               type: 'pie',
+               data: {
+                  labels: labels,
+                  datasets: [{
+                     data: values,
+                     backgroundColor: colors,
+                     hoverOffset: 4
+                  }]
+               },
+               options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                     legend: { display: false },
+                     tooltip: {
+                        callbacks: {
+                           label: function (tooltipItem) {
+                              return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                           }
+                        }
+                     }
+                  }
+               }
+            });
+
+            chartInstances.push(chart);
+         });
+
+         // document.querySelectorAll(".legend-item").forEach(legend => {
+         //    legend.addEventListener("click", function () {
+         //       const index = this.getAttribute("data-chart-index");
+         //       alert(`Legend clicked for Chart ${parseInt(index) + 1}`);
+         //    });
+         // });
+
+      });
+   </script>
+
 </body>
 
 </html>

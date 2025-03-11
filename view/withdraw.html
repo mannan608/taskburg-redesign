@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Master admin panel</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <link rel="icon" href="assets/images/brand/favicon.ico">
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+   <!-- end bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="../assets/css/master.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+   <div class="app">
+      <div class="navbar-wrapper">
+         <div class="container-fluid h-100">
+            <nav class="navbar h-100">
+               <div class="navbar-brand d-flex align-items-center gap-2">
+                  <div class="mobile-nav-toggler">
+                     <img src="../assets/images/hamburger.svg" alt="" class="w-auto h-auto">
+                  </div>
+                  <a href="/" class="d-inline-flex link-body-emphasis desktop-logo">
+                     <img src="../assets/images/brand/logo.svg" alt="">
+                  </a>
+
+               </div>
+               <ul class="navbar-nav nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Post
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Post Job</a></li>
+                        <li><a class="dropdown-item" href="#">My Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Work
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Find Jobs</a></li>
+                        <li><a class="dropdown-item" href="#">Finished Jobs</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Deposit
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Deposit</a></li>
+                        <li><a class="dropdown-item" href="#">Withdraw</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Setting
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">My Support</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Refer & Earn
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Refer & Earn</a></li>
+                        <li><a class="dropdown-item" href="#">Frelancer</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="mobile-nav">
+                  <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find
+                        Jobs</a></li>
+                  <li> <a href="#"><i class="fa-brands fa-creative-commons-nd"></i> Post
+                        Job</a></li>
+                  <li><a href="#"><i class="fa-solid fa-list-check"></i> My Jobs</a></li>
+                  <li><a href="#"><i class="fa-regular fa-square-check"></i> Finished
+                        Jobs</a></li>
+                  <li><a href="#"><i class="fa-solid fa-building-columns"></i> Deposit</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-dollar-sign"></i> Withdraw</a></li>
+                  <li><a href="#"><i class="fa-solid fa-share-nodes"></i> Refer &amp; Earn</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-phone"></i> Support</a></li>
+                  <li><a href="#"><i class="fa-regular fa-user"></i> Freelancer</a>
+                  </li>
+                  <li><a href="#"><i class="fa-solid fa-gear"></i></i>
+                        Setting</a></li>
+
+               </ul>
+               <div class="navbar-action d-flex gap-3 justify-content-end">
+                  <a href="notification.html" class="notification-icon action-menu position-relative">
+                     <img src="../assets/images/notification_24.svg" alt="" class="w-auto h-auto">
+                     <span class="badge text-bg-danger">4</span>
+                  </a>
+                  <div class="dropdown text-end profile-icon">
+                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                     </a>
+                     <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Hello Mannan</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                     </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">Post Job</button>
+               </div>
+
+            </nav>
+            <div class="short-menu">
+               <div class="feature-menu">
+                  <svg width="540" height="42" viewBox="0 0 540 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="mask0_3_7" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="540"
+                        height="42">
+                        <path d="M540 0H0V42H540V0Z" fill="white" />
+                     </mask>
+                     <g mask="url(#mask0_3_7)">
+                        <path
+                           d="M0 0L8.154 32.7096C8.82124 35.3785 10.2765 37.7342 12.2952 39.4132C14.314 41.0922 16.784 42.0012 19.3243 42H520.668C523.207 41.9994 525.675 41.0895 527.693 39.4107C529.71 37.7318 531.164 35.3771 531.83 32.7096L540 0H0Z"
+                           fill="white" />
+                     </g>
+                  </svg>
+                  <div class="feature-menu-content">
+                     <a href="assign-parcel.html" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/pending_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Pending : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/approve_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Earned : 20000</h6>
+                        </div>
+                     </a>
+                     |
+                     <a href="#" class="font-12">
+                        <div class="card-item  d-flex align-items-center gap-1">
+                           <img src="../assets/images/deposit_bal.svg" alt="" class="w-auto h-auto">
+                           <h6 class="font-12">Deposit : 20000</h6>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mobile-menu">
+         <div class="menu-backdrop"></div>
+         <nav class="mobile-menu-nav">
+            <div class="mobile-brand d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
+               </div>
+               <div class="close-btn ">
+                  <img src="../assets/images/close.png" alt="">
+               </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-outer">
+
+
+            </div>
+         </nav>
+      </div>
+      <div class="main-wrapper">
+         <div class="container-fluid">
+            <div class="dashboard">
+               <div class="withdraw mt-3">
+                  <div class="marquee-message ">
+                     <p class="d-flex align-items-center justify-content-center text-white fw-500">
+                        <marquee>
+                           Your submitted tasks will be completed within a maximum days
+                        </marquee>
+                     </p>
+                  </div>
+                  <div class="title mt-3">
+                     <h5>Withdraw | <span class="font-16">Transaction History</span></h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footerContainer">
+         <div class="container-fluid">
+            <footer>
+               <div class="footer-bottom mt-4">
+                  <div class="row">
+                     <div class="col">
+                        <a href="#" class="footer-brand p-3">
+                           <img src="../assets/images/brand/footer_logo.svg" alt="" class="w-auto h-auto">
+                        </a>
+                        <p class="text-white mt-2 text-center">Taskburg is a small workplace that gradually turns into a
+                           big
+                           success.</p>
+                     </div>
+                     <div class="col company">
+                        <h5 class="fw-600 text-white">Company</h5>
+                        <ul class="d-flex flex-column link gap-1 mt-3">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="col social-media">
+                        <h5 class="fw-600 text-white">Follow us </h5>
+                        <ul class="d-flex gap-3 social-icon mt-3">
+                           <li><a href="#" class="text-white "><i class="fa-brands fa-square-instagram"></i></a>
+                           </li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></li>
+                           <li><a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <p class="font-14 fw-500 mt-5 text-center text-white">© 2024 - 2025 Taskburg. All rights reserved</p>
+            </footer>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!-- end bootstrap and jquery cdn link -->
+   <!-- custom javascript -->
+   <script src="../assets/js/custom.js"></script>
+   <script src="../assets/js/master.js"></script>
+   <!-- custom javascript -->
+   <script>
+      document.querySelectorAll(".choices-select").forEach(function (select) {
+         new Choices(select, {
+            searchEnabled: false,
+            itemSelectText: "",
+         });
+      });
+   </script>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const charts = document.querySelectorAll(".pieChart");
+         const chartInstances = [];
+
+         charts.forEach((canvas, index) => {
+            const ctx = canvas.getContext('2d');
+            const values = JSON.parse(canvas.getAttribute("data-values"));
+            const labels = JSON.parse(canvas.getAttribute("data-labels"));
+            const colors = JSON.parse(canvas.getAttribute("data-colors"));
+
+            const chart = new Chart(ctx, {
+               type: 'pie',
+               data: {
+                  labels: labels,
+                  datasets: [{
+                     data: values,
+                     backgroundColor: colors,
+                     hoverOffset: 4
+                  }]
+               },
+               options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                     legend: { display: false },
+                     tooltip: {
+                        callbacks: {
+                           label: function (tooltipItem) {
+                              return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                           }
+                        }
+                     }
+                  }
+               }
+            });
+
+            chartInstances.push(chart);
+         });
+
+         // document.querySelectorAll(".legend-item").forEach(legend => {
+         //    legend.addEventListener("click", function () {
+         //       const index = this.getAttribute("data-chart-index");
+         //       alert(`Legend clicked for Chart ${parseInt(index) + 1}`);
+         //    });
+         // });
+
+      });
+   </script>
+
+</body>
+
+</html>

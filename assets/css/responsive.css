@@ -7,12 +7,14 @@
   .short-menu {
     width: calc(100% - 40px);
   }
+
   .desktop-logo {
     width: 120px;
   }
 }
 
 @media only screen and (max-width: 991px) {
+
   .search-field .form-group,
   .select-field .form-group {
     width: 200px;
@@ -23,26 +25,62 @@
       gap: 14px;
     }
   }
+
   .desktop-logo {
     width: 94px;
   }
+
   .postContainer {
     flex-direction: column;
     gap: 48px !important;
   }
+
   .post-job .contactForm {
     width: 100%;
   }
+
   .post-job .jobSummary {
     width: 100%;
   }
+
   .form-action {
     .nextBtn {
       width: 140px !important;
     }
   }
+
   .contactForm .target_zone {
     gap: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .user-summary .row {
+    flex-direction: column;
+    row-gap: 14px;
+
+    .col-md-6 {
+      padding: 0 !important;
+      width: 100%;
+    }
+  }
+
+  .userChart {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  .chartContainer.w-50 {
+    width: 100% !important;
+  }
+
+  .job-action {
+    min-width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    touch-action: auto;
   }
 }
 
@@ -50,6 +88,7 @@
   .desktop-logo {
     width: 74px;
   }
+
   .filter-area {
     flex-direction: column;
     align-items: unset !important;
@@ -222,6 +261,7 @@
     width: 100%;
     padding: 0;
   }
+
   .form-action {
     .nextBtn {
       width: 130px !important;
@@ -241,6 +281,7 @@
   .desktop-logo {
     width: 74px;
   }
+
   .filter-area {
     position: relative;
   }
@@ -334,11 +375,25 @@
       width: 150px;
     }
   }
+
   .form-action {
     .nextBtn {
       width: 120px !important;
     }
   }
+
+  .profile {
+    flex-direction: column;
+
+    .user-info {
+      width: 100%;
+    }
+
+    .user-summary {
+      width: 100%;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -512,7 +567,7 @@
   }
 
   h6 {
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 18px !important;
   }
 
@@ -525,16 +580,20 @@
   .streamline .step {
     width: 60px;
   }
+
   .streamline {
     margin-left: 10px;
   }
+
   .trackContainer .nextBtn {
     margin-left: -4px;
   }
+
   .proof {
     flex-direction: column;
     gap: 0 !important;
     margin-bottom: 16px;
+
     .w-50 {
       width: 100% !important;
     }
@@ -549,18 +608,57 @@
       }
     }
   }
+
   .desktop-logo {
     width: 70px;
   }
+
   .streamline .step {
     width: 48px;
   }
+
   .streamline .step .step-icon::after {
     width: calc(100% - 30px);
   }
+
   .streamline .step .step-icon .step-circle {
     width: 32px;
     height: 32px;
+  }
+
+  .table-responsive {
+    .country {
+      display: none;
+    }
+  }
+
+  .table-responsive {
+    .details_link {
+      width: 80px;
+    }
+  }
+
+  .post-submit-jobs .table-responsive .form-check .form-check-label {
+    font-size: 12px;
+  }
+
+  .table-responsive {
+    .tbselect {
+      width: 108px;
+    }
+  }
+
+  .table-responsive {
+    .user_link {
+      width: 100px;
+    }
+  }
+
+  .rated-jobs {
+    .rated {
+      flex-direction: column;
+      gap: 0 !important;
+    }
   }
 }
 
@@ -596,6 +694,7 @@
       }
     }
   }
+
   .form-action {
     .nextBtn {
       width: 110px !important;
@@ -609,12 +708,14 @@
   }
 
   h6 {
-    font-size: 13px !important;
+    font-size: 13px;
     line-height: 16px !important;
   }
+
   p {
     font-size: 13px;
   }
+
   .job-submiting .job-summary {
     .country {
       a {
@@ -623,6 +724,7 @@
       }
     }
   }
+
   .jobSummary .lists {
     & .selected {
       span {

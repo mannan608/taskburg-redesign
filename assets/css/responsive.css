@@ -82,6 +82,14 @@
     scrollbar-width: none;
     touch-action: auto;
   }
+
+  .transaction {
+    width: calc(100% - 308px);
+  }
+
+  .earning-balance {
+    width: 284px;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -275,6 +283,22 @@
       width: 200px;
     }
   }
+
+  .withdraw-deposit {
+    flex-direction: column;
+    margin-top: 24px;
+
+  }
+
+  .transaction {
+    width: 100%;
+  }
+
+  .earning-balance {
+    width: 100%;
+    margin: 0;
+
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -454,6 +478,28 @@
 
   .backBtn {
     margin-top: -6px;
+  }
+
+  .payment-icon {
+    margin-bottom: 0px;
+  }
+
+  .bksh-icon {
+    width: fit-content;
+    height: 30px;
+  }
+
+  .nagad-icon {
+    width: 30px;
+  }
+
+  .binance {
+    width: fit-content;
+    height: 30px;
+  }
+
+  .transaction .tab-menus .card {
+    padding: 10px !important;
   }
 }
 

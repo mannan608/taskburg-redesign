@@ -200,17 +200,16 @@
                   <div class="marquee-message ">
                      <p class="d-flex align-items-center justify-content-center text-white fw-500">
                         <marquee>
-                           Withdrawal will be confirmed within 96 business hours. Minimum withdrawal is $6 and
-                           withdrawal fee 20%.
+                           Minimum deposiit is $1 and Deposit fee 20%.
                         </marquee>
                      </p>
                   </div>
                   <div class="title mt-4">
-                     <h5>Withdraw | <span class="font-16">Transaction History</span></h5>
+                     <h5>Deposit | <span class="font-16">Transaction History</span></h5>
                   </div>
                   <div class="withdraw-deposit d-flex gap-4">
                      <div class="transaction">
-                        <div class="card active cursor-pointer" data-bs-toggle="modal" data-bs-target="#withdrawModal">
+                        <div class="card active cursor-pointer" data-bs-toggle="modal" data-bs-target="#depositModal">
                            <div class="tab-menus">
                               <div class="card p-3">
                                  <img src="../assets/images/nagad.webp" alt="" class="payment-icon nagad-icon">
@@ -240,7 +239,7 @@
                      </div>
                      <div class="earning-balance">
                         <div class="card p-3">
-                           <h5 class="text-center">Earning Balance</h5>
+                           <h5 class="text-center">Deposit Balance</h5>
                            <div class="user-sort-des mt-4 d-flex flex-column gap-2">
                               <p class="text-black">Name : <span class="fw-600">Mannan</span></p>
                               <p class="text-black">Balance : <span class="fw-600">50</span></p>
@@ -291,11 +290,11 @@
             </footer>
          </div>
       </div>
-      <div class="modal" id="withdrawModal">
+      <div class="modal" id="depositModal">
          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="mt-2">Receive Nagad Personal Number</h5>
+                  <h5 class="mt-2">Payment Method : Nagad</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                <div class="modal-body">
@@ -303,28 +302,26 @@
                      <div class="row">
                         <div class="col-sm-12">
                            <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Personal Nagad No </label>
-                              <input type="number" class="form-control" placeholder="Personal Nagad No">
+                              <label for="" class="form-label">Account No </label>
+                              <input type="number" class="form-control" placeholder="Account No">
                            </div>
                         </div>
                         <div class="col-sm-12">
                            <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Payment Amount </label>
+                              <label for="" class="form-label">Your Amount </label>
+                              <input type="number" class="form-control" placeholder="Min Amount $1">
+                           </div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="form-group position-relative mb-3">
+                              <label for="" class="form-label">Your Transaction ID </label>
                               <input type="number" class="form-control" placeholder="Payment Amount">
                            </div>
                         </div>
                         <div class="col-sm-12">
                            <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Payment Amount </label>
-                              <input type="number" class="form-control" placeholder="Payment Amount">
-                              <span class="font-12 fw-500 text-danger mt-2">$1 = 100 Tk | 1100</span>
-                           </div>
-                        </div>
-                        <div class="col-sm-12">
-                           <div class="form-group position-relative mb-3">
-                              <label for="" class="form-label">Total Payment </label>
-                              <input type="number" class="form-control" placeholder="Total Amount" value="50" readonly>
-                              <span class="font-12 fw-500 text-danger mt-2">Insufficient Balance</span>
+                              <label for="" class="form-label">Enter your Nagad Account </label>
+                              <input type="text" class="form-control" placeholder="Nagad Account No">
                            </div>
                         </div>
 

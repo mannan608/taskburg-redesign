@@ -664,3 +664,44 @@ fieldset:disabled .btn {
   display: inline-block;
   margin-right: 5px;
 }
+
+.post-submit-jobs .table-responsive .table tbody tr,
+.post-submit-jobs .table-responsive .table thead tr {
+  align-items: center;
+}
+
+.payment-icon {
+  /* height: 48px; */
+  margin-bottom: 4px;
+}
+
+.nagad-icon {
+  width: 48px;
+}
+
+.bksh-icon {
+  width: fit-content;
+  height: 48px;
+}
+
+.binance {
+  width: fit-content;
+  height: 48px;
+}
+
+.transaction {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: calc(100% - 384px);
+}
+
+.earning-balance {
+  width: 360px;
+  margin-top: 18px;
+}
+
+.card.active {
+  border: 1px solid var(--bs-primary-500);
+}

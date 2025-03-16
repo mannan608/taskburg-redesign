@@ -105,8 +105,6 @@ body {
   }
 }
 
-
-
 .navbar-wrapper .profile-icon {
   img {
     width: 40px !important;
@@ -397,7 +395,7 @@ body {
     background: var(--bs-white);
   }
 
-  .form-check-input:checked+.form-check-label {
+  .form-check-input:checked + .form-check-label {
     border: 1px solid var(--bs-primary-500);
     background: #e6ecf5;
     color: var(--bs-primary-500);
@@ -584,7 +582,7 @@ fieldset:disabled .btn {
 }
 
 /* Show .checkYes when "Yes" is checked */
-.form-group:has(#flexRadioYes:checked)+.checkYes {
+.form-group:has(#flexRadioYes:checked) + .checkYes {
   display: block;
 }
 
@@ -594,17 +592,16 @@ fieldset:disabled .btn {
 }
 
 /* Show when the respective radio button is checked */
-.form-group:has(#not-satisfy:checked)+.not-satisfy-check {
+.form-group:has(#not-satisfy:checked) + .not-satisfy-check {
   display: block;
 }
 
-.form-group:has(#revision:checked)+.revision-check {
+.form-group:has(#revision:checked) + .revision-check {
   display: block;
 }
 
 #not-satisfy:checked {
   background-color: var(--bs-danger-500);
-
 }
 
 .profile {
@@ -629,8 +626,6 @@ fieldset:disabled .btn {
   border-radius: 50%;
   background: var(--bs-success-500);
 }
-
-
 
 .pieChartContainer {
   display: flex;
@@ -705,3 +700,16 @@ fieldset:disabled .btn {
 .card.active {
   border: 1px solid var(--bs-primary-500);
 }
+
+.table-responsive .table tbody tr,
+.table-responsive .table thead tr {
+  font-weight: 700;
+}
+.table-responsive .table tbody a {
+  font-weight: 700;
+}
+
+/* .table-responsive .table tbody tr:nth-child(even) {
+  background: var(--bs-primary-500);
+  color: var(--bs-white);
+} */
